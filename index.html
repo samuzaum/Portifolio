@@ -16,8 +16,6 @@
         nav {
             background-color: #3b2c49;
             color: white;
-            position: fixed;
-            top: 0;
             width: 100%;
             z-index: 1000;
             padding: 10px 0;
@@ -79,9 +77,9 @@
 <body>
 
     <!-- Nav Fixo -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">&#60;sl/&#62;</a>
+            <a class="navbar-brand" href="#inicio">&#60;sl/&#62;</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
@@ -93,7 +91,7 @@
     </nav>
 
     <!-- Header com título e foto -->
-    <header class="main-title">
+    <header class="main-title" id="inicio">
         <img src="src/trocar.jpeg" alt="Samuel Louvera" class="profile-pic">
         <h1>Samuel Louvera</h1>
         <h2>Full-Stack Developer</h2>
