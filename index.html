@@ -3,247 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Samuel</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Samuel Louvera - Full-Stack Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #3b2c49;
+        }
+        nav {
+            background-color: #3b2c49;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 10px 0;
+        }
+        nav .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        nav a {
+            color: white !important;
+            font-size: 1rem;
+            margin-right: 15px;
+        }
+        .main-title {
+            padding: 150px 0 50px 0; /* Ajuste devido ao nav fixo */
+            text-align: center;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .bg-dark-section {
+            background-color: #3b2c49;
+            color: white;
+        }
+        .btn-custom {
+            font-weight: bold;
+            border: 2px solid #3b2c49;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #3b2c49;
+            color: white;
+        }
+        .social-btns {
+            margin-top: 40px;
+            
+        }
+        .social-btns a {
+            margin-right: 15px;
+        }
+        .tech-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-<body id="particles-js">
-    <header id="inicio">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">&lt; SL /&gt</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"></li>
-                            <a class="nav-link" href="#inicio">inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-                </div>
+<body>
+
+    <!-- Nav Fixo -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">&#60;sl/&#62;</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <!-- Header com título e foto -->
+    <header class="main-title">
+        <img src="src/trocar.jpeg" alt="Samuel Louvera" class="profile-pic">
+        <h1>Samuel Louvera</h1>
+        <h2>Full-Stack Developer</h2>
+
+        <!-- Social Buttons -->
+        <div class="social-btns">
+            <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" class="btn btn-outline-primary me-4">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/samuzaum" target="_blank" class="btn btn-outline-dark">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <p class="btn btn-outline-dark btn-custom" id="email">samuelouvera@gmail.com</p>
+        </div>
     </header>
-    <main>
-        <!-- titulo -->
-        <div class="row align-items-center titulo-bg" >
-            <div class="text-center text-md-start titulo-div">
-                <div class="maintitle bg-white p-4 rounded-4">
-                    <h3>Samuel Louvera</h3>
-                    <h1 style="font-weight:bold;">Full Stack Developer</h1>
-                    <div class="mt-4">
-                        <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" class="btn btn-outline-primary me-4">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/samuzaum" target="_blank" class="btn btn-outline-dark">
-                            <i class="bi bi-github"></i> GitHub
-                        </a>
-                        <p class="btn btn-outline-dark btn-custom" id="email" > samuelouvera@gmail.com</p>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="src/trocar.jpeg" alt="Foto pessoal" class="ImgPerfil img-fluid rounded-circle">
-                </div>
-            </div>
-        </div>
-<!-- Sobre Mim -->
-<div class="row align-items-center sobre-mim content sobre-bg" id="sobre">
-    <div class="mainblock text-center text-md-start bg-sbr rounded-4">
-        <div class="maintitle  p-4">
-            <h1>Sobre Mim</h1>
-            <p>
-                Sou Samuel Louvera, desenvolvedor Full Stack apaixonado por criar soluções web eficazes. Tenho experiência tanto em front-end quanto em back-end, utilizando tecnologias como HTML, CSS, JavaScript, PHP, MySQL e Docker.
-            </p>
-            <p>
-                Busco constantemente aprimorar minhas habilidades e enfrentar novos desafios no desenvolvimento de software.
-            </p>
-        </div>
-        <!-- Tecnologias -->
-        <div class="maintitle p-4">
-            <h1>Tecnologias</h1>
-        </div>
-        <!-- Front-end -->
-        <div class="container py-5">
-            <div class="row justify-content-center align-items-center">
-                <!-- Front-end -->
-                <div class="col-md-6">
-                    <h2 class="text-center">Front-end</h2>
-                    <div class="container">
-                        <div class="row text-center justify-content-center align-items-center">
-                            <!-- HTML5 -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-html5-plain colored display-4"></i>
-                                <p>HTML5</p>
-                            </div>
-                            <!-- CSS3 -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-css3-plain colored display-4"></i>
-                                <p>CSS3</p>
-                            </div>
-                            <!-- JavaScript -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-javascript-plain colored display-4"></i>
-                                <p>JavaScript</p>
-                            </div>
-                            <!-- jQuery -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-jquery-plain colored display-4"></i>
-                                <p>jQuery</p>
-                            </div>
-                            <!-- Bootstrap -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-bootstrap-plain colored display-4"></i>
-                                <p>Bootstrap</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Back-end -->
-                <div class="col-md-6">
-                    <h2 class="text-center">Back-end</h2>
-                    <div class="container">
-                        <div class="row text-center justify-content-center align-items-center">
-                            <!-- PHP -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-php-plain colored display-4"></i>
-                                <p>PHP</p>
-                            </div>
-                            <!-- MySQL -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-mysql-plain colored display-4"></i>
-                                <p>MySQL</p>
-                            </div>
-                            <!-- Supabase -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase Logo" style="width: 64px;">
-                                <p>Supabase</p>
-                            </div>
-                            <!-- Node.js -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-nodejs-plain colored display-4"></i>
-                                <p>Node.js (em estudo)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Sobre</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac erat a nisi sodales varius. Donec at nisl quam. Proin vel leo sit amet purus tempus convallis. Integer feugiat, turpis vel interdum venenatis, lectus felis scelerisque nulla, ut laoreet libero mi id arcu. Nulla facilisi. Praesent auctor, purus nec auctor venenatis, arcu tortor scelerisque lacus, sit amet suscipit ligula metus ac dolor. Sed vitae orci ac sem convallis laoreet eget non ipsum. Integer auctor nisl ac sapien facilisis fringilla.</p>
+        </div>
+    </section>
 
+    <!-- Seção Tecnologias -->
+    <section id="portfolio" class="section bg-dark-section">
+        <div class="container text-center">
+            <h2 class="section-title">Tecnologias</h2>
             <div class="row">
-                <!-- Utilitários -->
-                <div class="col-md-6">
-                    <h2 class="text-center">Utilitários</h2>
-                    <div class="container">
-                        <div class="row text-center justify-content-center align-items-center">
-                            <!-- Git -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-git-plain colored display-4"></i>
-                                <p>Git</p>
-                            </div>
-                            <!-- Docker -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <i class="devicon-docker-plain colored display-4"></i>
-                                <p>Docker</p>
-                            </div>
+                <div class="col-md-4">
+                    <h3>Front-End</h3>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <i class="devicon-html5-plain tech-icon"></i>
+                            <p>HTML5</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-css3-plain tech-icon"></i>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-javascript-plain tech-icon"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-bootstrap-plain tech-icon"></i>
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-jquery-plain tech-icon"></i>
+                            <p>jQuery</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Design -->
-                <div class="col-md-6">
-                    <h2 class="text-center">Design</h2>
-                    <div class="container">
-                        <div class="row text-center justify-content-center align-items-center">
-                            <!-- Figma -->
-                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                <img src="https://cdn-icons-png.flaticon.com/256/5968/5968705.png" alt="Figma Logo" style="width: 64px;">
-                                <p>Figma</p>
-                            </div>
+                <div class="col-md-4">
+                    <h3>Back-End</h3>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <i class="devicon-php-plain tech-icon"></i>
+                            <p>PHP</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-mysql-plain tech-icon"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-nodejs-plain tech-icon"></i>
+                            <p>Node.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Utilitários</h3>
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <i class="devicon-git-plain tech-icon"></i>
+                            <p>Git</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-docker-plain tech-icon"></i>
+                            <p>Docker</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="fab fa-supabase tech-icon"></i>
+                            <p>Supabase</p>
+                        </div>
+                        <div class="col-4">
+                            <i class="devicon-figma-plain tech-icon"></i>
+                            <p>Figma</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
-        
-    </main>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="animation.js"></script>
-    <script>
-        // Seleciona o elemento com o ID 'email'
-        const emailElement = document.getElementById('email');
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <div class="container text-center">
+            <h2 class="section-title">Contato</h2>
+            <p>Entre em contato pelo email: <strong>samuelouvera@gmail.com</strong></p>
+            <a href="https://www.linkedin.com/in/samuel-louvera/" class="btn btn-primary">LinkedIn</a>
+        </div>
+    </section>
 
-        // Define o texto original
-        const originalText = 'samuelouvera@gmail.com';
-
-        // Define o texto quando o mouse está sobre o elemento
-        const hoverText = 'Clique para copiar';
-
-        // Define o texto quando o texto é copiado
-        const copiedText = 'Texto copiado';
-
-        // Adiciona o evento para quando o mouse está sobre o elemento
-        emailElement.addEventListener('mouseover', function() {
-            emailElement.textContent = hoverText;
-        });
-
-        // Adiciona o evento para quando o mouse sai do elemento
-        emailElement.addEventListener('mouseout', function() {
-            emailElement.textContent = originalText;
-        });
-
-        // Adiciona o evento para quando o elemento é clicado
-        emailElement.addEventListener('click', function() {
-            // Copia o texto para a área de transferência
-            navigator.clipboard.writeText(originalText)
-                .then(() => {
-                    emailElement.textContent = copiedText;
-                    // Opcional: Voltar ao texto original após 1 segundo
-                    setTimeout(() => {
-                        emailElement.textContent = originalText;
-                    }, 1000);
-                })
-                .catch(err => {
-                    console.error('Erro ao copiar o texto: ', err);
-                });
-        });
-    </script>
-    <script>
-        particlesJS('particles-js', {
-            "particles": {
-                "number": {
-                "value": 100
-                },
-                "size": {
-                "value": 3
-                },
-                "move": {
-                "speed": 1
-                },
-                "color": {
-                "value": "#ffffff"
-                }
-            }
-            });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
