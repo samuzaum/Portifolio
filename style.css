@@ -25,14 +25,24 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
-.container-header {
+.titulo-bg{
+  background-color: #3b2c49;
+  padding-bottom: 14.7vw;
+}
+.titulo-div {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;
+  background-color: #ffffff;
+  border-radius: 5vw;
+  margin-top: 8vw;
 }
 
 .logo a {
@@ -90,15 +100,6 @@ nav {
       display: flex;
   }
 }
-.mainblock{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5vw;
-    background-color: #ffffff;
-    border-radius: 5vw;
-    margin-top: 5vw;
-}
 .ImgPerfil{
   width: 20vw;
   border-radius: 5vw;
@@ -116,7 +117,15 @@ nav {
   margin-top: 1vw;
 }
 .sobre-mim{
-  padding-top: 40vh;
+  padding: 14.7vw 5vw 14.7vw 5vw;
+}
+.sobre-bg{
+  background-color: #ffffff;
+}
+.bg-sbr{
+  background-color:#3b2c49;
+  color :#ffffff;
+
 }
 .content {
   opacity: 0;

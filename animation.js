@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         sections.forEach(section => {
             const rect = section.getBoundingClientRect();
-            if (rect.top < viewportHeight * 0.1) { // Ajuste conforme necessário
+            if (rect.top < viewportHeight * 0.10) { // Ajuste conforme necessário
                 section.classList.add('visible');
             } else {
                 section.classList.remove('visible');

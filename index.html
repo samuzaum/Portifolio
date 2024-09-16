@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Samuel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +18,7 @@
     <header id="inicio">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">&lt; SL &gt</a>
+                <a class="navbar-brand" href="#">&lt; SL /&gt</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,10 +41,10 @@
             </div>
         </nav>
     </header>
-    <main class="container mt-5">
+    <main>
         <!-- titulo -->
-        <div class="row align-items-center" >
-            <div class="mainblock text-center text-md-start">
+        <div class="row align-items-center titulo-bg" >
+            <div class="text-center text-md-start titulo-div">
                 <div class="maintitle bg-white p-4 rounded-4">
                     <h3>Samuel Louvera</h3>
                     <h1 style="font-weight:bold;">Full Stack Developer</h1>
@@ -60,36 +63,127 @@
                 </div>
             </div>
         </div>
-        <!-- sobre-mim -->
-        <div class="row align-items-center sobre-mim content" id="sobre">
-            <div class="mainblock text-center text-md-start" >
-                <div class="maintitle bg-white p-4 rounded-4" >
-                    <h1 >Sobre Mim</h1>
-                    <p>
-                        Sou Samuel Louvera, desenvolvedor Full Stack apaixonado por criar soluções web eficazes. Tenho experiência tanto em front-end quanto em back-end, utilizando tecnologias como HTML, CSS, JavaScript, PHP, MySQL, e Docker.
-                    </p>
-                    <p>
-                        Busco constantemente aprimorar minhas habilidades e enfrentar novos desafios no desenvolvimento de software.
-                    </p>
+<!-- Sobre Mim -->
+<div class="row align-items-center sobre-mim content sobre-bg" id="sobre">
+    <div class="mainblock text-center text-md-start bg-sbr rounded-4">
+        <div class="maintitle  p-4">
+            <h1>Sobre Mim</h1>
+            <p>
+                Sou Samuel Louvera, desenvolvedor Full Stack apaixonado por criar soluções web eficazes. Tenho experiência tanto em front-end quanto em back-end, utilizando tecnologias como HTML, CSS, JavaScript, PHP, MySQL e Docker.
+            </p>
+            <p>
+                Busco constantemente aprimorar minhas habilidades e enfrentar novos desafios no desenvolvimento de software.
+            </p>
+        </div>
+        <!-- Tecnologias -->
+        <div class="maintitle p-4">
+            <h1>Tecnologias</h1>
+        </div>
+        <!-- Front-end -->
+        <div class="container py-5">
+            <div class="row justify-content-center align-items-center">
+                <!-- Front-end -->
+                <div class="col-md-6">
+                    <h2 class="text-center">Front-end</h2>
+                    <div class="container">
+                        <div class="row text-center justify-content-center align-items-center">
+                            <!-- HTML5 -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-html5-plain colored display-4"></i>
+                                <p>HTML5</p>
+                            </div>
+                            <!-- CSS3 -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-css3-plain colored display-4"></i>
+                                <p>CSS3</p>
+                            </div>
+                            <!-- JavaScript -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-javascript-plain colored display-4"></i>
+                                <p>JavaScript</p>
+                            </div>
+                            <!-- jQuery -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-jquery-plain colored display-4"></i>
+                                <p>jQuery</p>
+                            </div>
+                            <!-- Bootstrap -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-bootstrap-plain colored display-4"></i>
+                                <p>Bootstrap</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back-end -->
+                <div class="col-md-6">
+                    <h2 class="text-center">Back-end</h2>
+                    <div class="container">
+                        <div class="row text-center justify-content-center align-items-center">
+                            <!-- PHP -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-php-plain colored display-4"></i>
+                                <p>PHP</p>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-mysql-plain colored display-4"></i>
+                                <p>MySQL</p>
+                            </div>
+                            <!-- Supabase -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase Logo" style="width: 64px;">
+                                <p>Supabase</p>
+                            </div>
+                            <!-- Node.js -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-nodejs-plain colored display-4"></i>
+                                <p>Node.js (em estudo)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row align-items-center technolgias content">
-                
-            <div class="mainblock text-center text-md-start">
-                <div class="maintitle bg-white p-4 rounded-4">
-                    <h1>Tecnolgias</h1>
-                    <p>
-                        Sou Samuel Louvera, desenvolvedor Full Stack apaixonado por criar soluções web eficazes. Tenho experiência tanto em front-end quanto em back-end, utilizando tecnologias como HTML, CSS, JavaScript, PHP, MySQL, e Docker.
-                    </p>
-                    <p>
-                        Busco constantemente aprimorar minhas habilidades e enfrentar novos desafios no desenvolvimento de software.
-                    </p>
+
+            <div class="row">
+                <!-- Utilitários -->
+                <div class="col-md-6">
+                    <h2 class="text-center">Utilitários</h2>
+                    <div class="container">
+                        <div class="row text-center justify-content-center align-items-center">
+                            <!-- Git -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-git-plain colored display-4"></i>
+                                <p>Git</p>
+                            </div>
+                            <!-- Docker -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <i class="devicon-docker-plain colored display-4"></i>
+                                <p>Docker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="col-md-6">
+                    <h2 class="text-center">Design</h2>
+                    <div class="container">
+                        <div class="row text-center justify-content-center align-items-center">
+                            <!-- Figma -->
+                            <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                                <img src="https://cdn-icons-png.flaticon.com/256/5968/5968705.png" alt="Figma Logo" style="width: 64px;">
+                                <p>Figma</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
-        </div>
-        
+    </div>
+</div>
+
         
     </main>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
