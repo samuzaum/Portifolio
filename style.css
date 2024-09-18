@@ -1,139 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset CSS */
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
 /* Reset CSS */
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #3b2c49;
-  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fa;
+  color: #3b2c49;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE e Edge */
 }
 
-header {
-  background-color: #000000;
-  color: #fff;
-  padding: 1rem 0;
+/* Dark mode - substitui as cores */
+body.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.titulo-bg{
   background-color: #3b2c49;
-  padding-bottom: 14.7vw;
-}
-.titulo-div {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5vw;
-  background-color: #ffffff;
-  border-radius: 5vw;
-  margin-top: 8vw;
+  color: white;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
-.logo a {
+body.dark-mode nav {
+  background-color: #1f1f1f;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
   color: #fff;
-  text-decoration: none;
+}
+
+nav a {
+  color: white !important;
+  font-size: 1rem;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  color: black !important;
+}
+
+body.dark-mode nav a:hover {
+  color: #f8f9fa !important;
+}
+
+.main-title {
+  padding: 14vw 0 6vw 0; /* Ajuste devido ao nav fixo */
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-dark-section {
+  background-color: #3b2c49;
+  color: white;
+}
+
+body.dark-mode .bg-dark-section {
+  background-color: #1f1f1f;
+  color: #f8f9fa;
+}
+
+.btn-custom {
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background-color: #3b2c49;
+  color: white;
+}
+
+body.dark-mode .btn-custom:hover {
+  background-color: #121212;
+}
+
+.social-btns {
+  margin-top: 40px;
+}
+
+.social-btns a {
+  margin-right: 15px;
+}
+
+.tech-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+/* Estilo para a seção de Projetos */
+.section.bg-light {
+  background-color: #f8f9fa;
+}
+
+.project-card {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.project-card img {
+  border-radius: 5px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+.project-card p {
+  margin-bottom: 15px;
+  color: #6c757d;
 }
 
-.nav-links li {
-  margin-left: 2rem;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .nav-links.active {
-      display: flex;
-  }
-
-  .menu-toggle {
-      display: flex;
-  }
-}
-.ImgPerfil{
-  width: 20vw;
-  border-radius: 5vw;
-}
-.maintitle{
-  padding-right:20vw;
-}
-#email {
-  cursor: pointer;
-  display: inline-block; /* Para garantir que o tamanho não mude */
-  width: 250px; /* Largura fixa para o elemento */
-  overflow: hidden; /* Oculta o texto que ultrapassa o tamanho definido */
-  text-overflow: ellipsis; /* Adiciona reticências se o texto for maior que a largura */
-  white-space: nowrap; /* Impede a quebra de linha */
-  margin-top: 1vw;
-}
-.sobre-mim{
-  padding: 14.7vw 5vw 14.7vw 5vw;
-}
-.sobre-bg{
-  background-color: #ffffff;
-}
-.bg-sbr{
-  background-color:#3b2c49;
-  color :#ffffff;
-
-}
-.content {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.content.visible {
-  opacity: 1;
-  transform: translateY(0);
+.project-card .btn {
+  margin-top: 10px;
 }
