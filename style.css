@@ -104,7 +104,7 @@ body.dark-mode .btn-custom:hover {
 }
 
 .social-btns a {
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 
 .tech-icon {
@@ -143,4 +143,22 @@ body.dark-mode .btn-custom:hover {
 
 .project-card .btn {
   margin-top: 10px;
+}
+
+#email {
+  cursor: pointer;
+  display: inline-block; /* Para garantir que o tamanho não mude */
+  width: 250px; /* Largura fixa para o elemento */
+  overflow: hidden; /* Oculta o texto que ultrapassa o tamanho definido */
+  text-overflow: ellipsis; /* Adiciona reticências se o texto for maior que a largura */
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+@media (max-width: 490px) {
+  #email {
+      margin-top: 0.25rem; /* ou o valor que você achar apropriado */
+  }
+  .social-btns a {
+    margin-right: 0;
+  }
 }
