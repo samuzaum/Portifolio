@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,15 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Nav Fixo -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">&lt; SL /&gt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#inicio">&lt; SL /&gt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,10 +48,10 @@
             </div>
         </div>
     </nav>
-     </nav>
+    </nav>
 
     <!-- Header com título e foto -->
-    <header class="main-title" id="inicio">
+    <section class="main-title" id="inicio">
         <img src="src/trocar.jpeg" alt="Samuel Louvera" class="profile-pic  mt-5 mt-sm-2">
         <h1>Samuel Louvera</h1>
         <h2><strong>Full-Stack Developer</strong></h2>
@@ -63,18 +66,23 @@
             </a>
             <p class="btn btn-outline-dark btn-custom mb-0" id="email">samuelouvera@gmail.com</p>
         </div>
-    </header>
+    </section>
 
     <!-- Seção Sobre -->
     <section id="sobre" class="section">
         <div class="container text-center">
             <h2 class="section-title">Sobre</h2>
-            <p>Sou Samuel Louvera, desenvolvedor <strong>Full-Stack</strong> com foco em criar soluções web modernas e funcionais. Trabalho com <strong>HTML, CSS, JavaScript e Bootstrap</strong> no front-end, garantindo interfaces responsivas e intuitivas, e utilizo <strong>PHP e Node.js</strong> no back-end para construir sistemas escaláveis. Além disso, faço uso de <strong>Git</strong> para controle de versão e boas práticas no desenvolvimento. Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> e sempre buscando novos desafios para aplicar e expandir meus conhecimentos técnicos.</p>
+            <p>Sou Samuel Louvera, desenvolvedor <strong>Full-Stack</strong> com foco em criar soluções web modernas e
+                funcionais. Trabalho com <strong>HTML, CSS, JavaScript e Bootstrap</strong> no front-end, garantindo
+                interfaces responsivas e intuitivas, e utilizo <strong>PHP e Node.js</strong> no back-end para construir
+                sistemas escaláveis. Além disso, faço uso de <strong>Git</strong> para controle de versão e boas
+                práticas no desenvolvimento. Estou cursando <strong>Análise e Desenvolvimento de Sistemas</strong> e
+                sempre buscando novos desafios para aplicar e expandir meus conhecimentos técnicos.</p>
         </div>
     </section>
 
     <!-- Seção Tecnologias -->
-    <section id="portfolio" class="section bg-dark-section">
+    <div id="" class="section bg-dark-section">
         <div class="container text-center">
             <h2 class="section-title">Tecnologias</h2>
             <div class="row">
@@ -143,45 +151,62 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section id="projetos" class="section">
         <div class="container text-center">
             <h2 class="section-title">Projetos</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-    
+
                     <!-- Projeto 1 -->
                     <div class="carousel-item active">
                         <div class="project-card mb-4">
                             <h3>Stock 360</h3>
-                            <img src="src/projeto1/login.jpg" alt="Imagem do Projeto 1" data-bs-toggle="modal" data-bs-target="#modalProjeto1">
-                            <p>Descrição breve do Projeto 1. Explique o propósito e as tecnologias utilizadas neste projeto.</p>
-                            <a href="https://link-do-projeto1.com" target="_blank" class="btn btn-outline-primary">Ver Projeto</a>
+                            <img src="src/projeto1/login.jpg" alt="Imagem do Projeto 1" data-bs-toggle="modal"
+                                data-bs-target="#modalProjeto1">
+                            <p class="c-item-p">Desenvolvi um sistema de controle de estoque como projeto final do curso
+                                técnico em Informática para Internet. O objetivo era otimizar o armazenamento,
+                                organização e rastreabilidade de produtos em um almoxarifado com superlotação.
+                                Utilizamos o método Scrum para gerenciar o projeto, e eu atuei como Scrum Master.
+                                <br><strong>Tecnologias: HTML, CSS , JavaScript, PHP , Ajax, MySQL</strong></p>
+                            <a href="https://link-do-projeto1.com" target="_blank" class="btn btn-outline-dark btn-custom mb-0" id="git">Ver
+                                Projeto</a>
                         </div>
                     </div>
-    
+
                     <!-- Projeto 2 -->
                     <div class="carousel-item">
                         <div class="project-card mb-4">
-                            <h3>Projeto 2</h3>
-                            <img src="src/projeto2/home.jpg" alt="Imagem do Projeto 2" data-bs-toggle="modal" data-bs-target="#modalProjeto2">
-                            <p>Descrição breve do Projeto 2. Detalhe os principais aspectos e tecnologias empregadas.</p>
-                            <a href="https://link-do-projeto2.com" target="_blank" class="btn btn-outline-primary">Ver Projeto</a>
+                            <h3>Madzys (em desenvolvimento)</h3>
+                            <img src="src/projeto2/home.jpg" alt="Imagem do Projeto 2" data-bs-toggle="modal"
+                                data-bs-target="#modalProjeto2">
+                            <p class="c-item-p">Concebido para um brechó virtual, este projeto de e-commerce combina
+                                elegância e funcionalidade, oferecendo uma plataforma moderna para a venda de roupas e
+                                acessórios de segunda mão. A solução foi projetada para otimizar a experiência do
+                                usuário, com navegação fluida e intuitiva, promovendo o consumo consciente e a moda
+                                sustentável.</p>
+                            <a href="https://www.instagram.com/madz.ys/" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://link-do-projeto2.com" target="_blank" class="btn btn-outline-dark btn-custom mb-0" id="git">Ver
+                                Projeto</a>
                         </div>
                     </div>
-    
+
                     <!-- Projeto 3 -->
                     <div class="carousel-item">
                         <div class="project-card mb-4">
-                            <h3>Projeto 3</h3>
-                            <img src="src/projeto3_1.jpg" alt="Imagem do Projeto 3" data-bs-toggle="modal" data-bs-target="#modalProjeto3">
-                            <p>Descrição breve do Projeto 3. Comente sobre as funcionalidades e desafios enfrentados.</p>
-                            <a href="https://link-do-projeto3.com" target="_blank" class="btn btn-outline-primary">Ver Projeto</a>
+                            <h3>Em desenvolvimento</h3>
+                            <img src="src/embreve-dark.jpg" alt="Imagem do Projeto 3" data-bs-toggle="modal"
+                                data-bs-target="#modalProjeto3">
+                            <p class="c-item-p"></p>
+                            <!-- <a href="https://link-do-projeto3.com" target="_blank" class="btn btn-outline-primary">Ver
+                                Projeto</a> -->
                         </div>
                     </div>
-    
+
                 </div>
-    
+
                 <!-- Controle de navegação -->
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                     <i class="bi bi-caret-left-fill" style="color: #3b2c49;"></i>
@@ -192,7 +217,7 @@
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
-    
+
             <!-- Indicadores simples -->
             <div class="indicators mt-3">
                 <span class="indicator active"></span>
@@ -201,7 +226,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Modais com Carrosséis -->
     <!-- Modal Projeto 1 -->
     <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
@@ -214,17 +239,20 @@
                                 <img src="src/projeto1/login.jpg" class="img-fluid" alt="Imagem do Projeto 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="src/projeto1/dashboard.jpg" class="img-fluid" alt="Imagem do Projeto 1 - Dashboard">
+                                <img src="src/projeto1/dashboard.jpg" class="img-fluid"
+                                    alt="Imagem do Projeto 1 - Dashboard">
                             </div>
                             <div class="carousel-item">
                                 <img src="src/projeto1/tabela.jpg" class="img-fluid" alt="Imagem do Projeto 1 - Tabela">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal1" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal1"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal1" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal1"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -233,7 +261,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Modal Projeto 2 -->
     <div class="modal fade" id="modalProjeto2" tabindex="-1" aria-labelledby="modalProjeto2Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -248,11 +276,13 @@
                                 <img src="src/projeto2/home2.jpg" class="img-fluid" alt="Imagem do Projeto 2 - 2">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal2" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal2"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal2" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal2"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -261,7 +291,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Modal Projeto 3 -->
     <div class="modal fade" id="modalProjeto3" tabindex="-1" aria-labelledby="modalProjeto3Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -270,20 +300,16 @@
                     <div id="carouselModal3" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="src/projeto3_1.jpg" class="img-fluid" alt="Imagem do Projeto 3">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="src/projeto3_2.jpg" class="img-fluid" alt="Imagem do Projeto 3 - 2">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="src/projeto3_3.jpg" class="img-fluid" alt="Imagem do Projeto 3 - 3">
+                                <img src="src/embreve-dark.jpg" class="img-fluid" alt="Imagem do Projeto 3">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal3" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselModal3"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal3" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselModal3"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -294,53 +320,71 @@
     </div>
     <style>
         .project-card {
-            height: 400px; /* Altura fixa para o cartão */
-            overflow: hidden; /* Oculta o conteúdo que excede o espaço */
-            border: 1px solid #ddd; /* Borda ao redor do cartão */
-            border-radius: 8px; /* Borda arredondada */
+            min-height: 500px;
+            /* Define uma altura mínima */
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Centraliza verticalmente o conteúdo */
-            align-items: center; /* Centraliza horizontalmente o conteúdo */
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            /* Adiciona um padding interno */
         }
-    
+
         .project-card img {
-            max-height: 100%; /* Permite que a imagem preencha a altura do cartão */
-            width: auto; /* Mantém a proporção da imagem */
-            object-fit: contain; /* Ajusta a imagem para caber no espaço sem distorção */
-            margin: auto; /* Centraliza a imagem */
-            padding: 1vw;
+            max-height: 200px;
+            /* Tamanho fixo da imagem */
+            width: auto;
+            object-fit: contain;
+            margin-bottom: 20px;
+            /* Espaço entre a imagem e o texto */
             border-radius: 1rem;
         }
-    
+
+        .c-item-p {
+            margin-top: auto;
+            /* Empurra o parágrafo para baixo */
+            margin-right: 10vw;
+            margin-left: 10vw;
+            justify-content: center;
+            text-align: justify;
+            /* Justifica o texto para uma melhor apresentação */
+        }
+
         .indicators {
             display: flex;
             justify-content: center;
         }
-    
+
         .indicator {
             width: 10px;
             height: 10px;
-            background-color: #ddd; /* Cor padrão */
+            background-color: #ddd;
+            /* Cor padrão */
             border-radius: 50%;
             margin: 0 5px;
             transition: background-color 0.3s;
         }
-    
+
         .indicator.active {
-            background-color: #3b2c49;; /* Cor do indicador ativo */
+            background-color: #3b2c49;
+            ;
+            /* Cor do indicador ativo */
         }
-    
+
         .carousel-control-prev:hover,
         .carousel-control-next:hover {
-            color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente */
+            color: rgba(255, 255, 255, 0.5);
+            /* Fundo semitransparente */
         }
     </style>
-    
+
     <script>
         const carousel = document.querySelector('#carouselExampleIndicators');
         const indicators = document.querySelectorAll('.indicator');
-    
+
         carousel.addEventListener('slid.bs.carousel', function (event) {
             const activeIndex = event.to; // Use o índice do evento
             indicators.forEach((indicator, index) => {
@@ -348,10 +392,10 @@
             });
         });
     </script>
-    
-    
-    
-    
+
+
+
+
     <!-- Seção Contato -->
     <section id="contato" class="bg-dark-section">
         <div class="container text-center">
@@ -368,6 +412,7 @@
         const themeIcon = document.getElementById('theme-icon');
         const githubBtn = document.getElementById('github-btn');
         const emailPara = document.getElementById('email');
+        const gitbtn = document.getElementById('git')
         const body = document.body;
 
         // Verifica se o usuário já selecionou o modo escuro anteriormente
@@ -385,53 +430,105 @@
                 githubBtn.classList.replace('btn-outline-dark', 'btn-outline-light');
                 emailPara.classList.replace('btn-outline-dark', 'btn-outline-light');
                 themeIcon.classList.replace('bi-sun-fill', 'bi-moon-fill');
+                gitbtn.classList.replace('btn-outline-dark', 'btn-outline-light');
             } else {
                 localStorage.setItem('theme', 'light');
                 githubBtn.classList.replace('btn-outline-light', 'btn-outline-dark');
                 emailPara.classList.replace('btn-outline-light', 'btn-outline-dark');
                 themeIcon.classList.replace('bi-moon-fill', 'bi-sun-fill');
+                gitbtn.classList.replace('btn-outline-light', 'btn-outline-dark');
             }
         });
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
-            // Seleciona o elemento com o ID 'email'
-            const emailElement = document.getElementById('email');
-    
-            // Define o texto original
-            const originalText = 'samuelouvera@gmail.com';
-    
-            // Define o texto quando o mouse está sobre o elemento
-            const hoverText = 'Clique para copiar';
-    
-            // Define o texto quando o texto é copiado
-            const copiedText = 'Texto copiado';
-    
-            // Adiciona o evento para quando o mouse está sobre o elemento
-            emailElement.addEventListener('mouseover', function() {
-                emailElement.textContent = hoverText;
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Seleciona o elemento com o ID 'email'
+        const emailElement = document.getElementById('email');
+
+        // Define o texto original
+        const originalText = 'samuelouvera@gmail.com';
+
+        // Define o texto quando o mouse está sobre o elemento
+        const hoverText = 'Clique para copiar';
+
+        // Define o texto quando o texto é copiado
+        const copiedText = 'Texto copiado';
+
+        // Adiciona o evento para quando o mouse está sobre o elemento
+        emailElement.addEventListener('mouseover', function () {
+            emailElement.textContent = hoverText;
+        });
+
+        // Adiciona o evento para quando o mouse sai do elemento
+        emailElement.addEventListener('mouseout', function () {
+            emailElement.textContent = originalText;
+        });
+
+        // Adiciona o evento para quando o elemento é clicado
+        emailElement.addEventListener('click', function () {
+            // Copia o texto para a área de transferência
+            navigator.clipboard.writeText(originalText)
+                .then(() => {
+                    emailElement.textContent = copiedText;
+                    // Opcional: Voltar ao texto original após 1 segundo
+                    setTimeout(() => {
+                        emailElement.textContent = originalText;
+                    }, 1000);
+                })
+                .catch(err => {
+                    console.error('Erro ao copiar o texto: ', err);
+                });
+        });
+    </script>
+    <script>
+        const sections = document.querySelectorAll('section');
+        let currentSection = 0;
+        let isScrolling = false;
+
+        const scrollToSection = (sectionIndex) => {
+            if (sections[sectionIndex]) {
+                const offset = sections[sectionIndex].getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: offset, behavior: 'smooth' });
+                // Atualiza a URL após a rolagem
+                history.pushState(null, null, `#${sections[sectionIndex].id}`);
+            }
+        };
+
+        const handleWheel = (event) => {
+            if (isScrolling) {
+                event.preventDefault(); // Impede a rolagem física
+                return;
+            }
+
+            isScrolling = true; // Ativa o bloqueio de rolagem
+
+            if (event.deltaY > 0 && currentSection < sections.length - 1) {
+                currentSection++;
+            } else if (event.deltaY < 0 && currentSection > 0) {
+                currentSection--;
+            }
+
+            scrollToSection(currentSection);
+
+            setTimeout(() => {
+                isScrolling = false; // Libera a rolagem após a animação
+            }, 900); // Ajuste o tempo se necessário
+        };
+
+        window.addEventListener('wheel', handleWheel, { passive: false });
+
+        document.querySelectorAll('nav a').forEach((anchor) => {
+            anchor.addEventListener('click', (event) => {
+                event.preventDefault();
+                if (isScrolling) return; // Impede o clique se estiver rolando
+
+                const targetSection = document.querySelector(anchor.getAttribute('href'));
+                currentSection = Array.from(sections).indexOf(targetSection);
+                scrollToSection(currentSection);
             });
-    
-            // Adiciona o evento para quando o mouse sai do elemento
-            emailElement.addEventListener('mouseout', function() {
-                emailElement.textContent = originalText;
-            });
-    
-            // Adiciona o evento para quando o elemento é clicado
-            emailElement.addEventListener('click', function() {
-                // Copia o texto para a área de transferência
-                navigator.clipboard.writeText(originalText)
-                    .then(() => {
-                        emailElement.textContent = copiedText;
-                        // Opcional: Voltar ao texto original após 1 segundo
-                        setTimeout(() => {
-                            emailElement.textContent = originalText;
-                        }, 1000);
-                    })
-                    .catch(err => {
-                        console.error('Erro ao copiar o texto: ', err);
-                    });
-            });
-        </script>
+        });
+    </script>
+
 </body>
+
 </html>

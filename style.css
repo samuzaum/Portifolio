@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 ::-webkit-scrollbar {
   display: none;
@@ -16,6 +17,7 @@ body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE e Edge */
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* Dark mode - substitui as cores */
