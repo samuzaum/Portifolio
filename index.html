@@ -49,14 +49,10 @@
         </div>
     </nav>
     </nav>
-
-    <!-- Header com título e foto -->
     <section class="main-title" id="inicio">
-        <img src="src/trocar.jpeg" alt="Samuel Louvera" class="profile-pic  mt-5 mt-sm-2">
+        <img src="src/foto.jpg" alt="Samuel Louvera" class="profile-pic  mt-5 mt-sm-2">
         <h1>Samuel Louvera</h1>
         <h2><strong>Full-Stack Developer</strong></h2>
-
-        <!-- Social Buttons -->
         <div class="social-btns d-flex align-items-center justify-content-center flex-wrap pb-5">
             <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" class="btn btn-outline-primary me-4">
                 <i class="bi bi-linkedin"></i> LinkedIn
@@ -82,7 +78,7 @@
     </section>
 
     <!-- Seção Tecnologias -->
-    <div id="" class="section bg-dark-section">
+    <div id="tec" class="section bg-dark-section">
         <div class="container text-center">
             <h2 class="section-title">Tecnologias</h2>
             <div class="row">
@@ -168,8 +164,10 @@
                                 técnico em Informática para Internet. O objetivo era otimizar o armazenamento,
                                 organização e rastreabilidade de produtos em um almoxarifado com superlotação.
                                 Utilizamos o método Scrum para gerenciar o projeto, e eu atuei como Scrum Master.
-                                <br><strong>Tecnologias: HTML, CSS , JavaScript, PHP , Ajax, MySQL</strong></p>
-                            <a href="https://github.com/samuzaum/Stock360" target="_blank" class="btn btn-outline-dark btn-custom mb-0" id="git">Ver
+                                <br><strong>Tecnologias: HTML, CSS , JavaScript, PHP , Ajax, MySQL</strong>
+                            </p>
+                            <a href="https://github.com/samuzaum/Stock360" target="_blank"
+                                class="btn btn-outline-dark btn-custom mb-0" id="git">Ver
                                 Projeto</a>
                         </div>
                     </div>
@@ -207,18 +205,16 @@
 
                 </div>
 
-                <!-- Controle de navegação -->
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                    <i class="bi bi-caret-left-fill" style="color: #3b2c49;"></i>
+                    <i class="bi bi-caret-left-fill" id="setac"></i>
                     <span class="visually-hidden">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                    <i class="bi bi-caret-right-fill" style="color: #3b2c49;"></i>
+                    <i class="bi bi-caret-right-fill" id="setac"></i>
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
 
-            <!-- Indicadores simples -->
             <div class="indicators mt-3">
                 <span class="indicator active"></span>
                 <span class="indicator"></span>
@@ -227,7 +223,6 @@
         </div>
     </section>
 
-    <!-- Modais com Carrosséis -->
     <!-- Modal Projeto 1 -->
     <div class="modal fade" id="modalProjeto1" tabindex="-1" aria-labelledby="modalProjeto1Label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -318,80 +313,7 @@
             </div>
         </div>
     </div>
-    <style>
-        .project-card {
-            min-height: 500px;
-            /* Define uma altura mínima */
-            overflow: hidden;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            /* Adiciona um padding interno */
-        }
 
-        .project-card img {
-            max-height: 200px;
-            /* Tamanho fixo da imagem */
-            width: auto;
-            object-fit: contain;
-            margin-bottom: 20px;
-            /* Espaço entre a imagem e o texto */
-            border-radius: 1rem;
-        }
-
-        .c-item-p {
-            margin-top: auto;
-            /* Empurra o parágrafo para baixo */
-            margin-right: 10vw;
-            margin-left: 10vw;
-            justify-content: center;
-            text-align: justify;
-            /* Justifica o texto para uma melhor apresentação */
-        }
-
-        .indicators {
-            display: flex;
-            justify-content: center;
-        }
-
-        .indicator {
-            width: 10px;
-            height: 10px;
-            background-color: #ddd;
-            /* Cor padrão */
-            border-radius: 50%;
-            margin: 0 5px;
-            transition: background-color 0.3s;
-        }
-
-        .indicator.active {
-            background-color: #3b2c49;
-            ;
-            /* Cor do indicador ativo */
-        }
-
-        .carousel-control-prev:hover,
-        .carousel-control-next:hover {
-            color: rgba(255, 255, 255, 0.5);
-            /* Fundo semitransparente */
-        }
-    </style>
-
-    <script>
-        const carousel = document.querySelector('#carouselExampleIndicators');
-        const indicators = document.querySelectorAll('.indicator');
-
-        carousel.addEventListener('slid.bs.carousel', function (event) {
-            const activeIndex = event.to; // Use o índice do evento
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active', index === activeIndex); // Atualiza o estado ativo
-            });
-        });
-    </script>
 
 
 
@@ -401,21 +323,31 @@
         <div class="container text-center">
             <h2 class="section-title pt-4">Contato</h2>
             <p>Entre em contato pelo email: <strong>samuelouvera@gmail.com</strong></p>
-            <a href="https://www.linkedin.com/in/samuel-louvera/" class="btn btn-primary">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" class="btn btn-outline-primary">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
         </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Adicione o JavaScript aqui
+        const carousel = document.querySelector('#carouselExampleIndicators');
+        const indicators = document.querySelectorAll('.indicator');
+
+        carousel.addEventListener('slid.bs.carousel', function (event) {
+            const activeIndex = event.to; 
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === activeIndex); // Atualiza o estado ativo
+            });
+        });
+    </script>
+    <script>
         const toggleButton = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
         const githubBtn = document.getElementById('github-btn');
         const emailPara = document.getElementById('email');
         const gitbtn = document.getElementById('git')
         const body = document.body;
-
-        // Verifica se o usuário já selecionou o modo escuro anteriormente
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             githubBtn.classList.replace('btn-outline-dark', 'btn-outline-light');
@@ -442,35 +374,20 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Seleciona o elemento com o ID 'email'
         const emailElement = document.getElementById('email');
-
-        // Define o texto original
         const originalText = 'samuelouvera@gmail.com';
-
-        // Define o texto quando o mouse está sobre o elemento
         const hoverText = 'Clique para copiar';
-
-        // Define o texto quando o texto é copiado
         const copiedText = 'Texto copiado';
-
-        // Adiciona o evento para quando o mouse está sobre o elemento
         emailElement.addEventListener('mouseover', function () {
             emailElement.textContent = hoverText;
         });
-
-        // Adiciona o evento para quando o mouse sai do elemento
         emailElement.addEventListener('mouseout', function () {
             emailElement.textContent = originalText;
         });
-
-        // Adiciona o evento para quando o elemento é clicado
         emailElement.addEventListener('click', function () {
-            // Copia o texto para a área de transferência
             navigator.clipboard.writeText(originalText)
                 .then(() => {
                     emailElement.textContent = copiedText;
-                    // Opcional: Voltar ao texto original após 1 segundo
                     setTimeout(() => {
                         emailElement.textContent = originalText;
                     }, 1000);
@@ -489,18 +406,17 @@
             if (sections[sectionIndex]) {
                 const offset = sections[sectionIndex].getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({ top: offset, behavior: 'smooth' });
-                // Atualiza a URL após a rolagem
                 history.pushState(null, null, `#${sections[sectionIndex].id}`);
             }
         };
 
         const handleWheel = (event) => {
             if (isScrolling) {
-                event.preventDefault(); // Impede a rolagem física
+                event.preventDefault();
                 return;
             }
 
-            isScrolling = true; // Ativa o bloqueio de rolagem
+            isScrolling = true; 
 
             if (event.deltaY > 0 && currentSection < sections.length - 1) {
                 currentSection++;
@@ -511,8 +427,8 @@
             scrollToSection(currentSection);
 
             setTimeout(() => {
-                isScrolling = false; // Libera a rolagem após a animação
-            }, 900); // Ajuste o tempo se necessário
+                isScrolling = false;o
+            }, 900); 
         };
 
         window.addEventListener('wheel', handleWheel, { passive: false });
@@ -520,7 +436,7 @@
         document.querySelectorAll('nav a').forEach((anchor) => {
             anchor.addEventListener('click', (event) => {
                 event.preventDefault();
-                if (isScrolling) return; // Impede o clique se estiver rolando
+                if (isScrolling) return;
 
                 const targetSection = document.querySelector(anchor.getAttribute('href'));
                 currentSection = Array.from(sections).indexOf(targetSection);

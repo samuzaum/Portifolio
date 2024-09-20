@@ -90,7 +90,9 @@ body.dark-mode .bg-dark-section {
   background-color: #1f1f1f;
   color: #f8f9fa;
 }
-
+body.dark-mode #setac {
+  color: #f8f9fa;
+}
 .btn-custom {
   font-weight: bold;
 }
@@ -158,7 +160,68 @@ body.dark-mode .btn-custom:hover {
   text-overflow: ellipsis; /* Adiciona reticências se o texto for maior que a largura */
   white-space: nowrap; /* Impede a quebra de linha */
 }
+.project-card {
+  min-height: 500px;
+  /* Define uma altura mínima */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* Adiciona um padding interno */
+}
 
+.project-card img {
+  max-height: 200px;
+  /* Tamanho fixo da imagem */
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
+  /* Espaço entre a imagem e o texto */
+  border-radius: 1rem;
+}
+
+.c-item-p {
+  margin-top: auto;
+  /* Empurra o parágrafo para baixo */
+  margin-right: 10vw;
+  margin-left: 10vw;
+  justify-content: center;
+  text-align: justify;
+  /* Justifica o texto para uma melhor apresentação */
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  /* Cor padrão */
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #3b2c49;
+  ;
+  /* Cor do indicador ativo */
+}
+#setac{
+  color: #3b2c49;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: rgba(255, 255, 255, 0.5);
+  /* Fundo semitransparente */
+}
 @media (max-width: 490px) {
   #email {
       margin-top: 0.25rem; /* ou o valor que você achar apropriado */
