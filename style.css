@@ -53,7 +53,9 @@ nav a {
 nav a:hover {
   color: black !important;
 }
-
+#close-btn {
+  display: none; /* Oculta o botão inicialmente */
+}
 body.dark-mode nav a:hover {
   color: #f8f9fa !important;
 }
