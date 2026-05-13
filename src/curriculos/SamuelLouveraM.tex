@@ -1,0 +1,143 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{parskip}
+
+\definecolor{accent}{RGB}{59,44,73}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\color{accent}\titlerule]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=1.2em}
+
+\hypersetup{colorlinks=true, urlcolor=accent, hidelinks}
+
+\begin{document}
+
+% ── CABEÇALHO ──────────────────────────────────────────────────────────────────
+{\LARGE\bfseries Samuel Louvera}\\[3pt]
+{\large Desenvolvedor Web \textbar{} Laravel \textbullet{} PHP \textbullet{} Python \textbullet{} APIs REST}\\[5pt]
+Ibirité, MG \quad\textbullet\quad
+\href{mailto:samuelouvera@gmail.com}{samuelouvera@gmail.com} \quad\textbullet\quad
+(31) 99788-1386\\
+\href{https://linkedin.com/in/samuel-louvera}{linkedin.com/in/samuel-louvera} \quad\textbullet\quad
+\href{https://samuzaum.github.io/Portfolio/}{samuzaum.github.io/Portfolio/} \quad\textbullet\quad
+\href{https://github.com/samuzaum}{github.com/samuzaum}
+
+% ── RESUMO ─────────────────────────────────────────────────────────────────────
+\section{Resumo Profissional}
+Desenvolvedor web com experiência em aplicações back-end usando Laravel, PHP, Node.js e Python,
+com foco em APIs REST, arquitetura MVC e integração com banco de dados relacional (MySQL).
+Atuação prática no desenvolvimento de soluções em produção: middleware Python para automação de
+integração de dados e API REST Laravel para gestão financeira. Familiaridade com Docker, Git,
+documentação técnica e ambientes de desenvolvimento organizados com variáveis de ambiente.
+
+% ── COMPETÊNCIAS ───────────────────────────────────────────────────────────────
+\section{Competências Técnicas}
+\begin{itemize}
+  \item \textbf{Desenvolvimento Web:} HTML, CSS, JavaScript, Bootstrap
+  \item \textbf{Back-end:} Laravel, PHP, Python, Node.js
+  \item \textbf{APIs:} Desenvolvimento e consumo de APIs REST
+  \item \textbf{Arquitetura:} MVC, separação de camadas (controller, service, repository)
+  \item \textbf{Banco de Dados:} MySQL, modelagem relacional, JOIN, GROUP BY
+  \item \textbf{Automação:} Python --- integração de dados, middleware, tratamento de dados brutos
+  \item \textbf{Infraestrutura:} Docker, variáveis de ambiente (.env), Google Workspace Admin
+  \item \textbf{Versionamento:} Git/GitHub
+  \item \textbf{Documentação:} \LaTeX, padronização e organização de conteúdo técnico
+  \item \textbf{Dados:} ETL (conceitos), Power BI (relatórios simples)
+\end{itemize}
+
+% ── EXPERIÊNCIA ────────────────────────────────────────────────────────────────
+\section{Experiência}
+
+\textbf{Lápis Raro} \hfill \textit{abr/2026 -- atual}\\
+\textit{Estagiário de T.I}
+\begin{itemize}
+  \item Desenvolvimento e implementação de middleware em Python para automação de extração e
+        integração de dados via protocolo Intelbras --- em produção.
+  \item Tratamento de dados brutos e alimentação automatizada de sistemas de controle financeiro,
+        eliminando entrada manual e reduzindo margem de erro.
+  \item Administração de IAM via Google Workspace (onboarding/offboarding, Princípio do Menor Privilégio).
+  \item Migração de dados legados para Google Drive com rotinas de backup e controle de integridade.
+\end{itemize}
+
+\medskip
+
+\textbf{AprendaNet \& Professor Global} \hfill \textit{ago/2025 -- atual · remoto}\\
+\textit{Bolsista em Desenvolvimento de Conteúdo Educacional --- Projeto CNPq}
+\begin{itemize}
+  \item Desenvolvimento de páginas HTML para conteúdos educacionais digitais.
+  \item Produção e formatação de materiais técnicos e científicos em \LaTeX.
+  \item Tradução e conversão de conteúdos matemáticos de Maple para \LaTeX{} e HTML.
+  \item Organização e publicação de materiais em ambientes virtuais de aprendizagem (LMS).
+\end{itemize}
+
+\medskip
+
+\textbf{Polimac Equipamentos para Gastronomia} \hfill \textit{out/2024 -- jan/2025}\\
+\textit{Estagiário de Vendas}
+\begin{itemize}
+  \item Gestão de e-commerce (Nuvem Shop e Mercado Livre).
+  \item Integração com áreas financeira, marketing e produção; uso de CRM HubSpot e ERP Bling.
+\end{itemize}
+
+% ── PROJETOS ───────────────────────────────────────────────────────────────────
+\section{Projetos}
+
+\textbf{CoupleSplit API} \hfill
+\href{https://github.com/samuzaum/CoupleSplit-API}{github.com/samuzaum/CoupleSplit-API}\\
+API REST em Laravel para gestão financeira de casais.
+\begin{itemize}
+  \item Autenticação, controle de despesas compartilhadas e gestão de benefícios (vale
+        alimentação e refeição).
+  \item Rastreamento de pagamentos por parceiro e cálculo de saldo mensal.
+  \item Stack: Laravel, PHP, MySQL.
+\end{itemize}
+
+\medskip
+
+\textbf{Stock 360} \hfill
+\href{https://github.com/samuzaum/Stock360}{github.com/samuzaum/Stock360}\\
+Sistema de controle de estoque --- projeto final do curso técnico.
+\begin{itemize}
+  \item CRUD completo, controle de acesso por perfil e consultas SQL com relacionamentos.
+  \item Metodologia Scrum; atuei como Scrum Master.
+  \item Stack: HTML, CSS, JavaScript, PHP, AJAX, MySQL.
+\end{itemize}
+
+\medskip
+
+\textbf{Portfólio Pessoal} \hfill
+\href{https://samuzaum.github.io/Portfolio/}{samuzaum.github.io/Portfolio/}\\
+Site responsivo para apresentação profissional e projetos.
+\begin{itemize}
+  \item Stack: HTML, CSS, Bootstrap, JavaScript.
+\end{itemize}
+
+% ── FORMAÇÃO ───────────────────────────────────────────────────────────────────
+\section{Formação}
+
+\textbf{Análise e Desenvolvimento de Sistemas} --- Faculdade Descomplica \hfill \textit{2024 -- 2026}\\
+\textbf{Técnico em Tecnologia da Informação} --- SENAI BH CECOTEG \hfill \textit{2023 -- 2024}
+
+% ── CERTIFICAÇÕES ──────────────────────────────────────────────────────────────
+\section{Certificações}
+\begin{itemize}
+  \item Cisco Networking Academy --- Network Defense
+  \item Cisco Networking Academy --- Endpoint Security
+  \item Object-Oriented Developer
+  \item Ferramentas e Aplicações de Inteligência Artificial
+  \item Excel Básico
+\end{itemize}
+
+\end{document}
