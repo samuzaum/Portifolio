@@ -1,14 +1,14 @@
 /* ── Variables ─────────────────────────────────────────────── */
 :root {
   --bg:          #f8f8ff;
-  --bg-section:  #f3e5f5;
+  --bg-section:  #f8fafc;
   --bg-card:     #f8f8ff;
   --border:      #e4d7ea;
   --border-hover:#c7b4d8;
   --accent:      #36255c;
   --accent-hover:#281a49;
   --accent-soft: #f3e5f5;
-  --accent-dim:  #f3e5f5;
+  --accent-dim:  rgba(54, 37, 92, 0.08);
   --text:        #241a36;
   --text-muted:  #6d627c;
   --text-dim:    #4a3b63;
