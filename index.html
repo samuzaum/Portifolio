@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Samuel Louvera — Desenvolvedor Web especializado em Laravel, PHP, Python e APIs REST.">
+    <meta name="theme-color" content="#36255c">
+    <meta property="og:title" content="Samuel Louvera">
+    <meta property="og:description" content="Portfólio de Samuel Louvera, desenvolvedor web com foco em back-end, automação, Laravel, PHP, Python e APIs REST.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/foto.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Samuel Louvera">
+    <meta name="twitter:description" content="Desenvolvedor web com foco em back-end, automação e APIs REST.">
+    <meta name="twitter:image" content="assets/images/foto.jpg">
     <title>Samuel Louvera</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,7 +31,7 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="nav-brand">&lt; SL /&gt;</a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="nav-links">
@@ -319,67 +329,7 @@
         </div>
     </section>
 
-    <script>
-        // ── Nav scroll effect ──
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('scrolled', window.scrollY > 40);
-        });
-
-        // ── Mobile nav toggle ──
-        const navToggle = document.getElementById('nav-toggle');
-        const navLinks  = document.getElementById('nav-links');
-        navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('open');
-            navLinks.classList.toggle('open');
-        });
-        navLinks.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('open');
-                navLinks.classList.remove('open');
-            });
-        });
-
-        // ── Active nav link on scroll ──
-        const sections = document.querySelectorAll('section[id]');
-        const navItems = document.querySelectorAll('.nav-link');
-        const navObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navItems.forEach(a => a.classList.remove('active'));
-                    const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
-                    if (active) active.classList.add('active');
-                }
-            });
-        }, { rootMargin: '-40% 0px -55% 0px' });
-        sections.forEach(s => navObserver.observe(s));
-
-        // ── Scroll animations ──
-        const animateObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    animateObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.12 });
-        document.querySelectorAll('.animate').forEach(el => animateObserver.observe(el));
-
-        // ── Email copy ──
-        function setupEmailCopy(btnId, labelId) {
-            const btn   = document.getElementById(btnId);
-            const label = document.getElementById(labelId);
-            if (!btn) return;
-            btn.addEventListener('click', () => {
-                navigator.clipboard.writeText('samuelouvera@gmail.com').then(() => {
-                    label.textContent = 'Copiado!';
-                    setTimeout(() => { label.textContent = 'samuelouvera@gmail.com'; }, 1500);
-                });
-            });
-        }
-        setupEmailCopy('email-btn',   'email-label');
-        setupEmailCopy('email-btn-2', 'email-label-2');
-    </script>
+    <script src="assets/js/main.js" defer></script>
 
 </body>
 </html>
