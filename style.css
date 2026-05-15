@@ -7,7 +7,6 @@
   --border-hover:#c7b4d8;
   --accent:      #36255c;
   --accent-hover:#281a49;
-  --accent-soft: #f3e5f5;
   --accent-dim:  rgba(54, 37, 92, 0.08);
   --text:        #241a36;
   --text-muted:  #6d627c;
@@ -20,7 +19,6 @@
   --shadow-sm:   0 1px 4px rgba(0,0,0,0.06);
   --shadow-md:   0 4px 20px rgba(0,0,0,0.08);
   --shadow-accent: 0 8px 30px rgba(54,37,92,0.14);
-  --hairline:    rgba(54, 37, 92, 0.16);
 }
 
 /* ── Reset ─────────────────────────────────────────────────── */
@@ -118,7 +116,7 @@ img { max-width: 100%; display: block; }
   box-shadow: inset 0 1px 0 rgba(248,248,255,0.65);
 }
 
-/* ── Section common ────────────────────────────────────────── */
+/* ── Section layout ────────────────────────────────────────── */
 section {
   padding: 96px 0;
   position: relative;
@@ -126,6 +124,7 @@ section {
 }
 section:nth-child(even) { background: var(--bg-section); }
 
+/* ── Section background details ────────────────────────────── */
 #inicio::before,
 #sobre::before,
 #formacao::before,
@@ -140,6 +139,7 @@ section:nth-child(even) { background: var(--bg-section); }
   z-index: 0;
 }
 
+/* Side segmented lines */
 #inicio::before,
 #experiencia::before,
 #projetos::before,
@@ -158,6 +158,7 @@ section:nth-child(even) { background: var(--bg-section); }
   );
 }
 
+/* Subtle section grids */
 #sobre::before,
 #formacao::before,
 #tecnologias::before,
@@ -184,6 +185,7 @@ section:nth-child(even) { background: var(--bg-section); }
   opacity: 0.38;
 }
 
+/* Thin horizontal accents */
 #sobre::after,
 #formacao::after,
 #tecnologias::after,
@@ -219,6 +221,7 @@ section:nth-child(even) { background: var(--bg-section); }
   width: min(420px, 70vw);
 }
 
+/* Keep content above decorative layers */
 #inicio > *,
 #sobre .container,
 #formacao .container,
@@ -230,6 +233,7 @@ section:nth-child(even) { background: var(--bg-section); }
   z-index: 1;
 }
 
+/* Per-section decorative placement */
 #inicio::before {
   right: clamp(1.2rem, 4vw, 3.25rem);
   top: 16%;
@@ -258,6 +262,7 @@ section:nth-child(even) { background: var(--bg-section); }
   opacity: 0.62;
 }
 
+/* ── Section titles ────────────────────────────────────────── */
 .section-title {
   font-size: clamp(1.6rem, 3vw, 2rem);
   font-weight: 800;
@@ -589,6 +594,8 @@ section:nth-child(even) { background: var(--bg-section); }
   min-width: 0;
   position: relative;
 }
+
+/* ── Shared card ornaments ─────────────────────────────────── */
 .timeline-card::before,
 .tech-category::before,
 .project-card::before {
@@ -633,6 +640,8 @@ section:nth-child(even) { background: var(--bg-section); }
   opacity: 1;
   border-color: rgba(54,37,92,0.34);
 }
+
+/* ── Timeline card behavior ────────────────────────────────── */
 .timeline-card:hover {
   border-color: var(--border-hover);
   box-shadow: var(--shadow-md);
@@ -699,7 +708,6 @@ section:nth-child(even) { background: var(--bg-section); }
   background: linear-gradient(90deg, var(--border-hover), transparent);
   opacity: 0.75;
 }
-.tech-icons { position: relative; }
 .tech-category:hover { border-color: var(--border-hover); box-shadow: var(--shadow-md); }
 .tech-category h3 {
   font-size: 0.75rem;
@@ -713,6 +721,7 @@ section:nth-child(even) { background: var(--bg-section); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.1rem;
+  position: relative;
 }
 .tech-item {
   display: flex;
@@ -809,11 +818,12 @@ section:nth-child(even) { background: var(--bg-section); }
 }
 .contato-actions { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
 
-/* ── MOBILE ────────────────────────────────────────────────── */
+/* ── Responsive: tablet and small desktop ──────────────────── */
 @media (max-width: 900px) {
   .tech-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Responsive: mobile navigation/layout ──────────────────── */
 @media (max-width: 1024px) {
   section { padding: 64px 0; }
 
@@ -868,6 +878,7 @@ section:nth-child(even) { background: var(--bg-section); }
   .tech-icons { grid-template-columns: repeat(4, 1fr); }
 }
 
+/* ── Responsive: phone polish ──────────────────────────────── */
 @media (max-width: 480px) {
   .container { padding: 0 1.25rem; }
   .hero-name { font-size: 2.1rem; }
@@ -944,6 +955,7 @@ section:nth-child(even) { background: var(--bg-section); }
   }
 }
 
+/* ── Responsive: very narrow phones ────────────────────────── */
 @media (max-width: 360px) {
   .container { padding: 0 1rem; }
   #inicio { padding-left: 1rem; padding-right: 1rem; }
@@ -960,31 +972,7 @@ section:nth-child(even) { background: var(--bg-section); }
   }
 }
 
-@media (max-height: 700px) and (max-width: 480px) {
-  #inicio {
-    justify-content: flex-start;
-    min-height: auto;
-  }
-
-  .scroll-down { display: none; }
-}
-
-@media (max-width: 360px) {
-  .container { padding: 0 1rem; }
-  #inicio { padding-left: 1rem; padding-right: 1rem; }
-  .timeline-card,
-  .tech-category,
-  .project-body {
-    padding: 1.15rem;
-  }
-
-  .timeline { padding-left: 1.1rem; }
-  .timeline-dot {
-    left: -1.1rem;
-    width: 1.1rem;
-  }
-}
-
+/* ── Responsive: short phone screens ───────────────────────── */
 @media (max-height: 700px) and (max-width: 480px) {
   #inicio {
     justify-content: flex-start;
