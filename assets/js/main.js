@@ -74,3 +74,49 @@ function setupEmailCopy(btnId, labelId) {
 
 setupEmailCopy('email-btn', 'email-label');
 setupEmailCopy('email-btn-2', 'email-label-2');
+
+/* ── Scroll progress bar ── */
+const prog = document.getElementById('scroll-prog');
+window.addEventListener('scroll', () => {
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+  if (prog) prog.style.width = pct + '%';
+}, { passive: true });
+
+/* ── Custom cursor (only on fine-pointer devices) ── */
+if (window.matchMedia('(pointer: fine)').matches) {
+  const dot  = document.getElementById('cur-dot');
+  const ring = document.getElementById('cur-ring');
+  let mx = -100, my = -100, rx = -100, ry = -100;
+
+  window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
+
+  (function loop() {
+    rx += (mx - rx) * 0.11;
+    ry += (my - ry) * 0.11;
+    if (dot)  { dot.style.left  = mx + 'px'; dot.style.top  = my + 'px'; }
+    if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; }
+    requestAnimationFrame(loop);
+  })();
+
+  const hoverEls = 'a, button, .project-card, .tech-item, .timeline-card, .cert-list li, .nav-link';
+  document.querySelectorAll(hoverEls).forEach(el => {
+    el.addEventListener('mouseenter', () => ring && ring.classList.add('hovered'));
+    el.addEventListener('mouseleave', () => ring && ring.classList.remove('hovered'));
+  });
+
+  window.addEventListener('mousedown', () => ring && ring.classList.add('clicking'));
+  window.addEventListener('mouseup',   () => ring && ring.classList.remove('clicking'));
+}
+
+/* ── Magnetic buttons ── */
+document.querySelectorAll('.mag').forEach(wrap => {
+  const btn = wrap.querySelector('.btn');
+  if (!btn) return;
+  wrap.addEventListener('mousemove', e => {
+    const r = wrap.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width  / 2) * 0.3;
+    const y = (e.clientY - r.top  - r.height / 2) * 0.3;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  wrap.addEventListener('mouseleave', () => { btn.style.transform = 'translate(0,0)'; });
+});
