@@ -78,8 +78,10 @@ setupEmailCopy('email-btn-2', 'email-label-2');
 /* ── Scroll progress bar ── */
 const prog = document.getElementById('scroll-prog');
 window.addEventListener('scroll', () => {
+  if (!prog) return;
   const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
-  if (prog) prog.style.width = pct + '%';
+  prog.style.width = pct + '%';
+  prog.style.opacity = window.scrollY > 10 ? '1' : '0';
 }, { passive: true });
 
 /* ── Custom cursor (only on fine-pointer devices) ── */

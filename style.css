@@ -963,8 +963,9 @@ section:nth-child(even) { background: var(--bg-section); }
   background-size: 200% auto;
   animation: prog-shimmer 3s linear infinite;
   box-shadow: 0 0 6px rgba(54,37,92,0.5);
-  transition: width .1s linear;
+  transition: width .1s linear, opacity .3s;
   pointer-events: none;
+  opacity: 0;
 }
 @keyframes prog-shimmer { to { background-position: 200% center; } }
 
@@ -1011,13 +1012,15 @@ section:nth-child(even) { background: var(--bg-section); }
 .marquee-strip::before { left: 0;  background: linear-gradient(90deg, var(--bg-section), transparent); }
 .marquee-strip::after  { right: 0; background: linear-gradient(-90deg, var(--bg-section), transparent); }
 .marquee-track {
-  display: inline-flex; gap: 0;
+  display: flex; flex-wrap: nowrap; gap: 0;
+  width: max-content;
   animation: marquee 32s linear infinite;
 }
 .marquee-strip:hover .marquee-track { animation-play-state: paused; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 .marquee-item {
   display: inline-flex; align-items: center; gap: .6rem;
+  flex-shrink: 0; white-space: nowrap;
   padding: 0 1.75rem;
   font-size: .72rem; font-weight: 600; letter-spacing: .1em;
   text-transform: uppercase; color: var(--text-muted);
