@@ -84,30 +84,41 @@ window.addEventListener('scroll', () => {
   prog.style.opacity = window.scrollY > 10 ? '1' : '0';
 }, { passive: true });
 
-/* ── Custom cursor (only on fine-pointer devices) ── */
-if (window.matchMedia('(pointer: fine)').matches) {
-  const dot  = document.getElementById('cur-dot');
-  const ring = document.getElementById('cur-ring');
+/* ── Custom cursor ── */
+const dot  = document.getElementById('cur-dot');
+const ring = document.getElementById('cur-ring');
+if (dot && ring) {
   let mx = -100, my = -100, rx = -100, ry = -100;
+  let cursorActive = false;
 
-  window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
+  window.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    if (!cursorActive) {
+      cursorActive = true;
+      dot.style.opacity = '1';
+      ring.style.opacity = '1';
+    }
+  }, { passive: true });
+
+  dot.style.opacity = '0';
+  ring.style.opacity = '0';
 
   (function loop() {
     rx += (mx - rx) * 0.11;
     ry += (my - ry) * 0.11;
-    if (dot)  { dot.style.left  = mx + 'px'; dot.style.top  = my + 'px'; }
-    if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; }
+    dot.style.left  = mx + 'px'; dot.style.top  = my + 'px';
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
     requestAnimationFrame(loop);
   })();
 
   const hoverEls = 'a, button, .project-card, .tech-item, .timeline-card, .cert-list li, .nav-link';
   document.querySelectorAll(hoverEls).forEach(el => {
-    el.addEventListener('mouseenter', () => ring && ring.classList.add('hovered'));
-    el.addEventListener('mouseleave', () => ring && ring.classList.remove('hovered'));
+    el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
+    el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
   });
 
-  window.addEventListener('mousedown', () => ring && ring.classList.add('clicking'));
-  window.addEventListener('mouseup',   () => ring && ring.classList.remove('clicking'));
+  window.addEventListener('mousedown', () => ring.classList.add('clicking'));
+  window.addEventListener('mouseup',   () => ring.classList.remove('clicking'));
 }
 
 /* ── Magnetic buttons ── */

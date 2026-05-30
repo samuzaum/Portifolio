@@ -970,7 +970,7 @@ section:nth-child(even) { background: var(--bg-section); }
 @keyframes prog-shimmer { to { background-position: 200% center; } }
 
 /* ── CURSOR ─────────────────────────────────────────────────── */
-@media (pointer: fine) and (hover: hover) {
+@media (pointer: fine) {
   *, *::before, *::after { cursor: none !important; }
 }
 .cur {
@@ -1012,7 +1012,8 @@ section:nth-child(even) { background: var(--bg-section); }
 .marquee-strip::before { left: 0;  background: linear-gradient(90deg, var(--bg-section), transparent); }
 .marquee-strip::after  { right: 0; background: linear-gradient(-90deg, var(--bg-section), transparent); }
 .marquee-track {
-  display: inline-flex; flex-wrap: nowrap; gap: 0;
+  display: inline-block;
+  white-space: nowrap;
   will-change: transform;
   animation: marquee 32s linear infinite;
 }
