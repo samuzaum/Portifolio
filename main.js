@@ -227,12 +227,20 @@ window.addEventListener('keydown', (e) => {
 /* ── Estrelas e tag reagem ao mouse (parallax) ── */
 const heroVisual = document.querySelector('.hero-visual');
 if (heroVisual && window.matchMedia('(hover: hover)').matches) {
+  let heroVisualEvent = null;
+  let heroVisualTicking = false;
   heroVisual.addEventListener('mousemove', (e) => {
-    const rect = heroVisual.getBoundingClientRect();
-    const mx = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
-    const my = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
-    heroVisual.style.setProperty('--mx', (mx * 12).toFixed(1));
-    heroVisual.style.setProperty('--my', (my * 12).toFixed(1));
+    heroVisualEvent = e;
+    if (heroVisualTicking) return;
+    heroVisualTicking = true;
+    requestAnimationFrame(() => {
+      const rect = heroVisual.getBoundingClientRect();
+      const mx = ((heroVisualEvent.clientX - rect.left) / rect.width - 0.5) * 2;
+      const my = ((heroVisualEvent.clientY - rect.top) / rect.height - 0.5) * 2;
+      heroVisual.style.setProperty('--mx', (mx * 12).toFixed(1));
+      heroVisual.style.setProperty('--my', (my * 12).toFixed(1));
+      heroVisualTicking = false;
+    });
   });
   heroVisual.addEventListener('mouseleave', () => {
     heroVisual.style.setProperty('--mx', 0);
@@ -247,22 +255,30 @@ const heroLetters = document.querySelectorAll('.hero-name .letter');
 if (heroNameWrap && heroTextArea && heroLetters.length && window.matchMedia('(hover: hover)').matches) {
   const clamp = (v) => Math.max(-1, Math.min(1, v));
   const REACH = 260; // px a partir do centro do nome (cobre SAMUEL + LOUVERA vazado embaixo)
+  let heroNameEvent = null;
+  let heroNameTicking = false;
   heroTextArea.addEventListener('mousemove', (e) => {
-    const rect = heroNameWrap.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = e.clientX - cx;
-    const dy = e.clientY - cy;
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    const falloff = Math.max(0, 1 - dist / REACH);
-    const nx = clamp(dx / (rect.width / 2)) * falloff;
-    const ny = clamp(dy / (rect.height / 2)) * falloff;
-    heroLetters.forEach((letter) => {
-      const i = parseFloat(letter.style.getPropertyValue('--i')) || 0;
-      const factor = (i - 6) / 6;
-      const lx = (nx * factor * 4).toFixed(1);
-      const ly = (ny * factor * 4).toFixed(1);
-      letter.style.transform = `translate(${lx}px, ${ly}px)`;
+    heroNameEvent = e;
+    if (heroNameTicking) return;
+    heroNameTicking = true;
+    requestAnimationFrame(() => {
+      const rect = heroNameWrap.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = heroNameEvent.clientX - cx;
+      const dy = heroNameEvent.clientY - cy;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const falloff = Math.max(0, 1 - dist / REACH);
+      const nx = clamp(dx / (rect.width / 2)) * falloff;
+      const ny = clamp(dy / (rect.height / 2)) * falloff;
+      heroLetters.forEach((letter) => {
+        const i = parseFloat(letter.style.getPropertyValue('--i')) || 0;
+        const factor = (i - 6) / 6;
+        const lx = (nx * factor * 4).toFixed(1);
+        const ly = (ny * factor * 4).toFixed(1);
+        letter.style.transform = `translate(${lx}px, ${ly}px)`;
+      });
+      heroNameTicking = false;
     });
   });
   heroTextArea.addEventListener('mouseleave', () => {
