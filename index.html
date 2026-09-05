@@ -5,54 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Samuel Louvera: Desenvolvedor Web especializado em Laravel, PHP, Python e APIs REST.">
-    <meta name="theme-color" content="#36255c">
-    <meta property="og:title" content="Samuel Louvera">
-    <meta property="og:description" content="Portfólio de Samuel Louvera, desenvolvedor web com foco em back-end, automação, Laravel, PHP, Python e APIs REST.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/images/foto.jpg">
-    <meta property="og:url" content="https://samuzaum.github.io/Portifolio/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Samuel Louvera">
-    <meta name="twitter:description" content="Desenvolvedor web com foco em back-end, automação e APIs REST.">
-    <meta name="twitter:image" content="assets/images/foto.jpg">
-    <link rel="canonical" href="https://samuzaum.github.io/Portifolio/">
+    <meta name="theme-color" content="#131215">
     <title>Samuel Louvera</title>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Samuel Louvera",
-      "jobTitle": "Desenvolvedor Web",
-      "url": "https://samuzaum.github.io/Portifolio/",
-      "image": "https://samuzaum.github.io/Portifolio/assets/images/foto.jpg",
-      "sameAs": [
-        "https://github.com/samuzaum",
-        "https://www.linkedin.com/in/samuel-louvera"
-      ],
-      "knowsAbout": ["Laravel", "PHP", "Python", "APIs REST", "JavaScript"]
-    }
+    <script>
+      (function () {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      })();
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rampart+One&family=Manrope:wght@500;600;700;800&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/images/favicon-sv.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <path id="star-shape" d="M50,3 L61,36 L96,36 L68,57 L79,90 L50,70 L21,90 L32,57 L4,36 L39,36 Z" />
+        </defs>
+    </svg>
+
     <div id="scroll-prog"></div>
-    <div class="cur cur-dot" id="cur-dot"></div>
-    <div class="cur cur-ring" id="cur-ring"></div>
 
     <!-- ── NAV ── -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#inicio" class="nav-brand">&lt; SL /&gt;</a>
+            <a href="#inicio" class="nav-brand"><img src="assets/images/sv-mark.png" alt="Samuel Louvera"></a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -70,30 +54,52 @@
 
     <!-- ── HERO ── -->
     <section id="inicio">
-        <div class="hero-photo-wrap">
-            <img src="assets/images/foto.jpg" alt="Samuel Louvera" class="hero-photo">
-        </div>
-        <p class="hero-greeting">Olá, eu sou</p>
-        <h1 class="hero-name">Samuel Louvera</h1>
-        <p class="hero-role">Desenvolvedor Web &nbsp;·&nbsp; Python &nbsp;·&nbsp; Laravel &nbsp;·&nbsp; PHP</p>
-        <p class="hero-desc">
-            Construindo soluções reais: do middleware em produção à API REST,
-            com foco em back-end, automação e arquitetura organizada.
-        </p>
-        <div class="hero-actions">
-            <span class="mag"><a href="assets/documents/curriculos/SamuelLouveraM.pdf" download class="btn btn-primary">
-                <i class="bi bi-download"></i> Download CV
-            </a></span>
-            <span class="mag"><a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                <i class="bi bi-linkedin"></i> LinkedIn
-            </a></span>
-            <span class="mag"><a href="https://github.com/samuzaum" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                <i class="bi bi-github"></i> GitHub
-            </a></span>
-            <button class="btn btn-ghost" id="email-btn">
-                <i class="bi bi-envelope"></i>
-                <span id="email-label">samuelouvera@gmail.com</span>
-            </button>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <p class="hero-greeting">Olá, eu sou</p>
+                <div class="hero-name-wrap">
+                    <svg class="name-star intro" viewBox="0 0 100 100" aria-hidden="true">
+                        <path d="M38,8 L46,34 L72,42 L46,50 L38,76 L30,50 L4,42 L30,34 Z" />
+                    </svg>
+                    <h1 class="hero-name"><span class="letter" style="--i:4">S</span><span class="letter" style="--i:11">a</span><span class="letter" style="--i:0">m</span><span class="letter" style="--i:7">u</span><span class="letter" style="--i:2">e</span><span class="letter" style="--i:9">l</span><br><span class="hero-name-line2"><span class="letter" style="--i:12">L</span><span class="letter" style="--i:1">o</span><span class="letter" style="--i:8">u</span><span class="letter" style="--i:5">v</span><span class="letter" style="--i:10">e</span><span class="letter" style="--i:3">r</span><span class="letter" style="--i:6">a</span></span></h1>
+                </div>
+                <p class="hero-role">Desenvolvedor Web · Python · Laravel · PHP</p>
+                <p class="hero-location"><i class="bi bi-geo-alt"></i> Ibirité, MG · Remoto</p>
+                <p class="hero-desc">
+                    Construindo soluções reais: do middleware em produção à API REST,
+                    com foco em back-end, automação e arquitetura organizada.
+                </p>
+                <div class="hero-actions">
+                    <a href="assets/documents/curriculos/SamuelLouveraM.pdf" download class="btn btn-primary">
+                        <i class="bi bi-download"></i> Download CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/samuzaum" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://wa.me/5531997881386" target="_blank" rel="noopener noreferrer" class="icon-link" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <button class="btn btn-ghost" id="email-btn">
+                        <i class="bi bi-envelope"></i>
+                        <span id="email-label">samuelouvera@gmail.com</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <svg class="hero-blob" viewBox="0 0 100 100" aria-hidden="true">
+                    <g class="star-a-shake"><path class="star-a" d="M50,3 L61,36 L96,36 L68,57 L79,90 L50,70 L21,90 L32,57 L4,36 L39,36 Z" transform="translate(-16 18) rotate(-28 50 50)" /></g>
+                    <g class="star-b-shake"><path class="star-b" d="M50,3 L61,36 L96,36 L68,57 L79,90 L50,70 L21,90 L32,57 L4,36 L39,36 Z" transform="translate(68 32) scale(0.68) rotate(22) translate(-50 -50)" /></g>
+                </svg>
+                <div class="hero-photo-wrap">
+                    <img src="assets/images/foto.jpg" alt="Samuel Louvera" class="hero-photo">
+                </div>
+                <div class="hero-tag-wrap">
+                    <img src="assets/images/samuzaum-tag.png" alt="" class="hero-tag" aria-hidden="true">
+                </div>
+            </div>
         </div>
         <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
             <i class="bi bi-chevron-double-down"></i>
@@ -103,37 +109,42 @@
     <!-- ── MARQUEE ── -->
     <div class="marquee-strip">
       <div class="marquee-track">
-        <span class="marquee-item">Laravel <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">PHP <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Python <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">REST API <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">MySQL <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Docker <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Node.js <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Git <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">JavaScript <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Google Workspace <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">IAM <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">ITIL <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Laravel <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">PHP <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Python <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">REST API <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">MySQL <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Docker <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Node.js <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Git <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">JavaScript <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">Google Workspace <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">IAM <i class="bi bi-circle-fill"></i></span>
-        <span class="marquee-item">ITIL <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Laravel</span>
+        <span class="marquee-item">PHP</span>
+        <span class="marquee-item">Python</span>
+        <span class="marquee-item">REST API</span>
+        <span class="marquee-item">MySQL</span>
+        <span class="marquee-item">Docker</span>
+        <span class="marquee-item">Node.js</span>
+        <span class="marquee-item">Git</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-item">Google Workspace</span>
+        <span class="marquee-item">IAM</span>
+        <span class="marquee-item">ITIL</span>
+        <span class="marquee-item">Laravel</span>
+        <span class="marquee-item">PHP</span>
+        <span class="marquee-item">Python</span>
+        <span class="marquee-item">REST API</span>
+        <span class="marquee-item">MySQL</span>
+        <span class="marquee-item">Docker</span>
+        <span class="marquee-item">Node.js</span>
+        <span class="marquee-item">Git</span>
+        <span class="marquee-item">JavaScript</span>
+        <span class="marquee-item">Google Workspace</span>
+        <span class="marquee-item">IAM</span>
+        <span class="marquee-item">ITIL</span>
       </div>
     </div>
 
     <!-- ── SOBRE ── -->
     <section id="sobre">
+        <svg class="deco-star deco-star--outline star-sobre" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
         <div class="container">
-            <h2 class="section-title animate">Sobre</h2>
+            <span class="section-watermark" aria-hidden="true">Sobre</span>
+            <div class="section-head animate">
+                <span class="eyebrow">Perfil</span>
+                <h2 class="section-title">Sobre</h2>
+            </div>
             <div class="sobre-content animate">
                 <p>
                     Sou Samuel Louvera, desenvolvedor web com foco em back-end e automação.
@@ -147,14 +158,20 @@
                     (Claude, ChatGPT, Gemini) no dia a dia como parte do fluxo de trabalho, e tenho
                     inglês técnico para leitura e interpretação de documentação.
                 </p>
+                <p class="sobre-quote">Prefiro resolver o problema certo a entregar código bonito que ninguém pediu.</p>
             </div>
         </div>
     </section>
 
     <!-- ── FORMAÇÃO ── -->
     <section id="formacao">
+        <svg class="deco-star deco-star--filled star-formacao" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
         <div class="container">
-            <h2 class="section-title animate">Formação</h2>
+            <span class="section-watermark" aria-hidden="true">Formação</span>
+            <div class="section-head animate">
+                <span class="eyebrow">Trajetória</span>
+                <h2 class="section-title">Formação</h2>
+            </div>
             <div class="formacao-grid animate">
                 <div>
                     <h3 class="formacao-label">Educação</h3>
@@ -191,12 +208,17 @@
 
     <!-- ── EXPERIÊNCIA ── -->
     <section id="experiencia">
+        <svg class="deco-star deco-star--outline star-experiencia" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
         <div class="container">
-            <h2 class="section-title animate">Experiência</h2>
+            <span class="section-watermark" aria-hidden="true">Experiência</span>
+            <div class="section-head animate">
+                <span class="eyebrow">Histórico profissional</span>
+                <h2 class="section-title">Experiência</h2>
+            </div>
             <div class="timeline">
 
                 <div class="timeline-item animate">
-                    <div class="timeline-dot"></div>
+                    <svg class="timeline-dot" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
                     <div class="timeline-card">
                         <div class="timeline-header">
                             <div>
@@ -229,7 +251,7 @@
                 </div>
 
                 <div class="timeline-item animate">
-                    <div class="timeline-dot"></div>
+                    <svg class="timeline-dot" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
                     <div class="timeline-card">
                         <div class="timeline-header">
                             <div>
@@ -252,7 +274,7 @@
                 </div>
 
                 <div class="timeline-item animate">
-                    <div class="timeline-dot"></div>
+                    <svg class="timeline-dot" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
                     <div class="timeline-card">
                         <div class="timeline-header">
                             <div>
@@ -279,8 +301,13 @@
 
     <!-- ── TECNOLOGIAS ── -->
     <section id="tecnologias">
+        <svg class="deco-star deco-star--filled star-tecnologias" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
         <div class="container">
-            <h2 class="section-title animate">Tecnologias</h2>
+            <span class="section-watermark" aria-hidden="true">Tecnologias</span>
+            <div class="section-head animate">
+                <span class="eyebrow">Ferramentas</span>
+                <h2 class="section-title">Tecnologias</h2>
+            </div>
             <div class="tech-grid animate">
                 <div class="tech-category">
                     <h3>Front-End</h3>
@@ -321,81 +348,392 @@
 
     <!-- ── PROJETOS ── -->
     <section id="projetos">
+        <svg class="deco-star deco-star--outline star-projetos" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
+        <svg class="deco-star deco-star--filled star-projetos-2" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
         <div class="container">
-            <h2 class="section-title animate">Projetos</h2>
-            <div class="projects-grid">
+            <span class="section-watermark" aria-hidden="true">Projetos</span>
+            <div class="section-head animate">
+                <span class="eyebrow">Projetos</span>
+                <h2 class="section-title">O que eu já construí</h2>
+                <p style="color:var(--slate);margin-top:.8rem;max-width:58ch;font-size:1rem;">
+                    De projetos pessoais a sistemas em produção na Lápis Raro, empresa onde trabalho hoje.
+                    Cada um com o contexto, a stack e o resultado.
+                </p>
+                <p style="color:var(--slate);opacity:.75;margin-top:.5rem;font-size:.85rem;">
+                    Clique em um projeto pra abrir os detalhes.
+                </p>
+            </div>
 
-                <div class="project-card animate">
-                    <div class="project-accent"></div>
-                    <div class="project-body">
-                        <h3>CoupleSplit API</h3>
-                        <p>API REST em Laravel para gestão financeira de casais. Autenticação, controle de despesas compartilhadas, gestão de benefícios (vale alimentação e refeição) e cálculo de saldo mensal por parceiro.</p>
-                        <div class="project-tags">
-                            <span class="tag">Laravel</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">REST API</span>
+            <!-- Destaques -->
+            <div class="projects-featured animate">
+
+                <article class="project-card" data-project="dashboard-financeiro" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div>
+                        <div class="project-card-head">
+                            <span class="dot live"></span>
+                            <div>
+                                <h3>Dashboard Financeiro</h3>
+                                <span class="project-desc">Acompanhamento de faturamento e investimento por cliente, em produção</span>
+                            </div>
                         </div>
-                        <a href="https://github.com/samuzaum/CoupleSplit-API" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="bi bi-github"></i> Ver no GitHub
-                        </a>
+                        <div class="project-card-meta">
+                            <span class="status-pill live">Em produção</span>
+                            <span class="vis-stamp"><i class="bi bi-building"></i> Lápis Raro</span>
+                        </div>                    </div>
+                    <div class="project-card-visual">
+                        <div class="flow">
+                            <div class="flow-step">
+                                <div class="icon"><i class="bi bi-database"></i></div>
+                                <span>Supabase</span>
+                            </div>
+                            <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                            <div class="flow-step highlight">
+                                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                                <span>Next.js / React</span>
+                            </div>
+                            <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                            <div class="flow-step">
+                                <div class="icon"><i class="bi bi-people"></i></div>
+                                <span>Gestão</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card animate">
-                    <div class="project-accent"></div>
-                    <div class="project-body">
+                <article class="project-card" data-project="couplesplit" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div>
+                        <div class="project-card-head">
+                            <span class="dot dev"></span>
+                            <div>
+                                <h3>CoupleSplit</h3>
+                                <span class="project-desc">App de finanças para casais: despesas compartilhadas, metas e saldo mensal</span>
+                            </div>
+                        </div>
+                        <div class="project-card-meta">
+                            <span class="status-pill dev">Em desenvolvimento</span>
+                            <span class="vis-stamp"><i class="bi bi-person"></i> Projeto pessoal</span>
+                        </div>                    </div>
+                    <div class="project-card-visual">
+                        <img src="assets/projects/couplesplit/dashboard.png" alt="Dashboard do CoupleSplit com saldo entre o casal e gastos do mês" loading="lazy">
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Demais projetos -->
+            <div class="projects-grid animate">
+
+                <article class="project-card-mini" data-project="portal-notas" data-index="01" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot live"></span>
+                        <h3>Portal de Notas Fiscais</h3>
+                    </div>
+                    <span class="project-desc">Fluxo de notas fiscais entre a empresa e fornecedores, com aprovação e auditoria</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill live">Em produção</span>
+                        <span class="vis-stamp"><i class="bi bi-building"></i> Lápis Raro</span>
+                    </div>
+                </article>
+
+                <article class="project-card-mini" data-project="middleware-intelbras" data-index="02" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot live"></span>
+                        <h3>Middleware Intelbras</h3>
+                    </div>
+                    <span class="project-desc">Automação de extração e integração de dados via protocolo Intelbras</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill live">Em produção</span>
+                        <span class="vis-stamp"><i class="bi bi-building"></i> Lápis Raro</span>
+                    </div>
+                </article>
+
+                <article class="project-card-mini" data-project="newsletter-giro" data-index="03" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot live"></span>
+                        <h3>Newsletter GIЯO</h3>
+                    </div>
+                    <span class="project-desc">Curadoria e redação de newsletter com duas etapas de IA, em produção pra agência toda</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill live">Em produção</span>
+                        <span class="vis-stamp"><i class="bi bi-building"></i> Lápis Raro</span>
+                    </div>
+                </article>
+
+                <article class="project-card-mini" data-project="automacao-feedback" data-index="04" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot dev"></span>
+                        <h3>Automação de Feedback</h3>
+                    </div>
+                    <span class="project-desc">Dispara pesquisa de feedback entre colegas quando uma tarefa compartilhada é entregue</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill dev">Em desenvolvimento</span>
+                        <span class="vis-stamp"><i class="bi bi-building"></i> Lápis Raro</span>
+                    </div>
+                </article>
+
+                <article class="project-card-mini" data-project="stock360" data-index="05" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot live"></span>
                         <h3>Stock 360</h3>
-                        <p>Sistema de controle de estoque desenvolvido como TCC do curso técnico. Otimização de armazenamento e rastreabilidade de produtos em almoxarifado com superlotação. Atuei como Scrum Master.</p>
-                        <div class="project-tags">
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Ajax</span>
-                        </div>
-                        <a href="https://github.com/samuzaum/Stock360" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="bi bi-github"></i> Ver no GitHub
-                        </a>
                     </div>
-                </div>
+                    <span class="project-desc">Controle de estoque para almoxarifado com superlotação, TCC técnico</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill live">Concluído</span>
+                        <span class="vis-stamp"><i class="bi bi-person"></i> Projeto pessoal</span>
+                    </div>
+                </article>
 
-                <div class="project-card animate">
-                    <div class="project-accent"></div>
-                    <div class="project-body">
+                <article class="project-card-mini" data-project="madzys" data-index="06" tabindex="0" role="button" aria-haspopup="dialog">
+                    <div class="project-card-head">
+                        <span class="dot dev"></span>
                         <h3>Madzys</h3>
-                        <p>Plataforma de e-commerce para brechó virtual em desenvolvimento. Funcionalidades em construção: catálogo de produtos, carrinho, autenticação e painel de gestão para o vendedor.</p>
-                        <div class="project-tags">
-                            <span class="tag">E-commerce</span>
-                            <span class="tag">Em desenvolvimento</span>
-                        </div>
-                        <a href="https://www.instagram.com/madz.ys/" target="_blank" rel="noopener noreferrer" class="project-link">
-                            <i class="bi bi-instagram"></i> Ver no Instagram
-                        </a>
                     </div>
-                </div>
+                    <span class="project-desc">Plataforma de e-commerce para brechó virtual, em construção</span>
+                    <div class="project-card-meta">
+                        <span class="status-pill dev">Em desenvolvimento</span>
+                        <span class="vis-stamp"><i class="bi bi-person"></i> Projeto pessoal</span>
+                    </div>
+                </article>
 
             </div>
         </div>
+
+        <!-- Conteúdo detalhado de cada projeto, injetado no modal ao clicar -->
+        <template id="tpl-dashboard-financeiro">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Faturamento e investimento por cliente eram acompanhados sem visão consolidada nem histórico confiável.</dd>
+                    <dt>Solução</dt><dd>Sistema em produção que desenvolvo e mantenho sozinho, do zero: motor de cálculo que aplica correções sem sobrescrever dado importado, versionamento de metas e fechamentos, views materializadas para manter o painel rápido com anos de histórico, e reforço de controle de acesso a nível de linha.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Next.js</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Supabase</span></dd>
+                </dl>
+            </div>
+        </template>
+
+        <template id="tpl-portal-notas">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Notas fiscais entre a empresa e fornecedores/veículos de mídia circulavam sem fluxo formal nem histórico de aprovação.</dd>
+                    <dt>Solução</dt><dd>Portal em Laravel que desenvolvo e mantenho sozinho, com dois acessos (equipe e fornecedor), workflow de aprovação com estados e auditoria, integração com Gmail que identifica e organiza automaticamente as respostas dos fornecedores por e-mail, e cobertura de testes automatizados sobre autenticação, aprovação e isolamento de dados entre fornecedores.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Laravel</span><span class="tag">Gmail API</span><span class="tag">Testes automatizados</span></dd>
+                </dl>
+            </div>
+            <div class="flow">
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-truck"></i></div>
+                    <span>Fornecedor</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step highlight">
+                    <div class="icon"><i class="bi bi-folder2-open"></i></div>
+                    <span>Portal Laravel</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-envelope-check"></i></div>
+                    <span>Aprovação por e-mail</span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-middleware-intelbras">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Dispositivos Intelbras expunham dados em protocolo proprietário, sem integração direta com os sistemas internos da empresa.</dd>
+                    <dt>Solução</dt><dd>Middleware em Python que extrai, normaliza e integra esses dados automaticamente, rodando em produção desde a implantação.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Python</span><span class="tag">Automação</span><span class="tag">Integração de dados</span></dd>
+                </dl>
+            </div>
+            <div class="flow">
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-hdd-network"></i></div>
+                    <span>Dispositivos Intelbras</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step highlight">
+                    <div class="icon"><i class="bi bi-cpu"></i></div>
+                    <span>Middleware Python</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-database"></i></div>
+                    <span>Sistema interno</span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-newsletter-giro">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Produzir uma newsletter editorial de tendências toda semana consumia tempo manual de curadoria e redação.</dd>
+                    <dt>Solução</dt><dd>Automação que varre fontes de tendências e usa IA em duas etapas (uma extrai o que é relevante de cada fonte, outra edita e escreve no tom da marca), montando o e-mail final.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Make.com</span><span class="tag">Claude (Anthropic API)</span></dd>
+                </dl>
+            </div>
+            <div class="flow">
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-rss"></i></div>
+                    <span>Fontes de tendência</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step highlight">
+                    <div class="icon"><i class="bi bi-stars"></i></div>
+                    <span>Curadoria + edição por IA</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-envelope-paper"></i></div>
+                    <span>E-mail pronto</span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-automacao-feedback">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Feedback entre colegas depois de uma tarefa em conjunto dependia de alguém lembrar de pedir.</dd>
+                    <dt>Solução</dt><dd>Automação que escuta a entrega de tarefas compartilhadas na ferramenta de gestão de projetos, identifica quem trabalhou junto e dispara a pesquisa por e-mail, com as respostas centralizadas automaticamente numa planilha.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Laravel</span><span class="tag">Webhook</span><span class="tag">Google Sheets</span></dd>
+                </dl>
+            </div>
+            <div class="flow">
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-check2-square"></i></div>
+                    <span>Tarefa entregue</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step highlight">
+                    <div class="icon"><i class="bi bi-envelope"></i></div>
+                    <span>Pesquisa por e-mail</span>
+                </div>
+                <div class="flow-arrow"><i class="bi bi-arrow-right"></i></div>
+                <div class="flow-step">
+                    <div class="icon"><i class="bi bi-table"></i></div>
+                    <span>Planilha</span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-couplesplit">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Casais dividindo contas costumam controlar isso em planilha, sem histórico nem regra clara de rateio.</dd>
+                    <dt>Solução</dt><dd>Aplicação web completa em Laravel, não só uma API: dashboard com saldo entre o casal, lançamento de despesas compartilhadas ou pessoais, parcelamentos, cartões, metas de economia e histórico de pagamentos.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">SQLite</span><span class="tag">Tailwind</span></dd>
+                </dl>
+                <a class="project-link" href="https://github.com/samuzaum/CoupleSplit-API" target="_blank" rel="noopener noreferrer">↗ ver repositório</a>
+            </div>
+            <div class="shot-gallery">
+                <div class="shot-box" tabindex="0" role="button" aria-label="Ampliar captura de tela do dashboard do CoupleSplit">
+                    <img src="assets/projects/couplesplit/dashboard.png" alt="Dashboard do CoupleSplit com saldo entre o casal e gastos do mês" loading="lazy">
+                    <span class="shot-zoom"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+                <div class="shot-box" tabindex="0" role="button" aria-label="Ampliar captura de tela da lista de despesas do CoupleSplit">
+                    <img src="assets/projects/couplesplit/expenses.png" alt="Lista de despesas do CoupleSplit com a parte de cada um" loading="lazy">
+                    <span class="shot-zoom"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+                <div class="shot-box" tabindex="0" role="button" aria-label="Ampliar captura de tela da página inicial do CoupleSplit">
+                    <img src="assets/projects/couplesplit/landing.png" alt="Página inicial do CoupleSplit" loading="lazy">
+                    <span class="shot-zoom"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-stock360">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Almoxarifado físico sem rastreabilidade de posição, gerando perda de tempo e itens extraviados.</dd>
+                    <dt>Solução</dt><dd>Sistema de controle de estoque com otimização de armazenamento e rastreabilidade de produtos. Atuei como Scrum Master do time.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span><span class="tag">Ajax</span></dd>
+                </dl>
+                <a class="project-link" href="https://github.com/samuzaum/Stock360" target="_blank" rel="noopener noreferrer">↗ ver repositório</a>
+            </div>
+            <div class="shot-gallery">
+                <div class="shot-box" tabindex="0" role="button" aria-label="Ampliar captura de tela de entrada de produtos do Stock 360">
+                    <img src="assets/projects/stock360/entrada.jpg" alt="Tela de cadastro de entrada de produtos do Stock 360" loading="lazy">
+                    <span class="shot-zoom"><i class="bi bi-arrows-fullscreen"></i></span>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-madzys">
+            <div class="case">
+                <dl>
+                    <dt>Contexto</dt><dd>Brechó virtual precisando de um catálogo próprio em vez de depender só de rede social.</dd>
+                    <dt>Solução</dt><dd>Plataforma em construção: catálogo de produtos, carrinho, autenticação e painel de gestão para o vendedor.</dd>
+                    <dt>Stack</dt><dd class="tags-row"><span class="tag">E-commerce</span></dd>
+                </dl>
+                <a class="project-link" href="https://www.instagram.com/madz.ys/" target="_blank" rel="noopener noreferrer">↗ ver no Instagram</a>
+            </div>
+        </template>
     </section>
 
     <!-- ── CONTATO ── -->
     <section id="contato">
+        <svg class="contato-star" viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50,3 L61,36 L96,36 L68,57 L79,90 L50,70 L21,90 L32,57 L4,36 L39,36 Z" />
+        </svg>
         <div class="container">
-            <h2 class="section-title animate">Contato</h2>
-            <p class="contato-desc animate">Disponível para oportunidades remotas em desenvolvimento, automação e suporte técnico.</p>
-            <div class="contato-actions animate">
-                <button class="btn btn-primary" id="email-btn-2">
-                    <i class="bi bi-envelope"></i>
-                    <span id="email-label-2">samuelouvera@gmail.com</span>
-                </button>
-                <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
+            <div class="section-head animate">
+                <span class="eyebrow">Contato</span>
+                <h2 class="section-title">Vamos conversar</h2>
+            </div>
+            <div class="contato-card animate">
+                <span class="availability"><i class="bi bi-star-fill"></i> Disponível para novas oportunidades</span>
+                <p class="contato-desc">Disponível para oportunidades remotas em desenvolvimento, automação e suporte técnico.</p>
+                <div class="contato-actions">
+                    <button class="btn btn-primary" id="email-btn-2">
+                        <i class="bi bi-envelope"></i>
+                        <span id="email-label-2">samuelouvera@gmail.com</span>
+                    </button>
+                    <a href="https://wa.me/5531997881386" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="bi bi-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <button class="icon-link theme-toggle" id="theme-toggle" aria-label="Alternar para modo claro">
+                        <svg class="theme-toggle-star" viewBox="0 0 100 100" aria-hidden="true"><use href="#star-shape"></use></svg>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="assets/js/main.js" defer></script>
+    <footer class="container">
+        <span>© 2026 Samuel Louvera</span>
+        <a href="#inicio">Voltar ao topo ↑</a>
+    </footer>
+
+    <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="project-modal-panel">
+            <button class="project-modal-close" id="project-modal-close" aria-label="Fechar">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="project-modal-head">
+                <span class="dot" id="pm-dot"></span>
+                <div>
+                    <h3 id="pm-title"></h3>
+                    <span class="project-desc" id="pm-desc"></span>
+                </div>
+            </div>
+            <div class="project-card-meta" id="pm-meta"></div>
+            <div class="project-modal-body" id="pm-body"></div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Fechar">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <img id="lightbox-img" src="" alt="">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+
+    <div class="cursor-star" id="cursor-star" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><use href="#star-shape"></use></svg>
+    </div>
+
+    <script src="main.js" defer></script>
 
 </body>
 </html>

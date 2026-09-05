@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Samuel Louvera: Desenvolvedor Web especializado em Laravel, PHP, Python e APIs REST.">
+    <meta name="theme-color" content="#36255c">
+    <meta property="og:title" content="Samuel Louvera">
+    <meta property="og:description" content="Portfólio de Samuel Louvera, desenvolvedor web com foco em back-end, automação, Laravel, PHP, Python e APIs REST.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../assets/images/foto.jpg">
+    <meta property="og:url" content="https://samuzaum.github.io/Portifolio/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Samuel Louvera">
+    <meta name="twitter:description" content="Desenvolvedor web com foco em back-end, automação e APIs REST.">
+    <meta name="twitter:image" content="../assets/images/foto.jpg">
+    <link rel="canonical" href="https://samuzaum.github.io/Portifolio/">
+    <title>Samuel Louvera</title>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samuel Louvera",
+      "jobTitle": "Desenvolvedor Web",
+      "url": "https://samuzaum.github.io/Portifolio/",
+      "image": "https://samuzaum.github.io/Portifolio/assets/images/foto.jpg",
+      "sameAs": [
+        "https://github.com/samuzaum",
+        "https://www.linkedin.com/in/samuel-louvera"
+      ],
+      "knowsAbout": ["Laravel", "PHP", "Python", "APIs REST", "JavaScript"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.14.0/devicon.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="scroll-prog"></div>
+    <div class="cur cur-dot" id="cur-dot"></div>
+    <div class="cur cur-ring" id="cur-ring"></div>
+
+    <!-- ── NAV ── -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="nav-brand">&lt; SL /&gt;</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-controls="nav-links" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio"      class="nav-link">Início</a></li>
+                <li><a href="#sobre"       class="nav-link">Sobre</a></li>
+                <li><a href="#formacao"    class="nav-link">Formação</a></li>
+                <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li><a href="#projetos"    class="nav-link">Projetos</a></li>
+                <li><a href="#contato"     class="nav-link">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="inicio">
+        <div class="hero-photo-wrap">
+            <img src="../assets/images/foto.jpg" alt="Samuel Louvera" class="hero-photo">
+        </div>
+        <p class="hero-greeting">Olá, eu sou</p>
+        <h1 class="hero-name">Samuel Louvera</h1>
+        <p class="hero-role">Desenvolvedor Web &nbsp;·&nbsp; Python &nbsp;·&nbsp; Laravel &nbsp;·&nbsp; PHP</p>
+        <p class="hero-desc">
+            Construindo soluções reais: do middleware em produção à API REST,
+            com foco em back-end, automação e arquitetura organizada.
+        </p>
+        <div class="hero-actions">
+            <span class="mag"><a href="../assets/documents/curriculos/SamuelLouveraM.pdf" download class="btn btn-primary">
+                <i class="bi bi-download"></i> Download CV
+            </a></span>
+            <span class="mag"><a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a></span>
+            <span class="mag"><a href="https://github.com/samuzaum" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <i class="bi bi-github"></i> GitHub
+            </a></span>
+            <button class="btn btn-ghost" id="email-btn">
+                <i class="bi bi-envelope"></i>
+                <span id="email-label">samuelouvera@gmail.com</span>
+            </button>
+        </div>
+        <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+            <i class="bi bi-chevron-double-down"></i>
+        </a>
+    </section>
+
+    <!-- ── MARQUEE ── -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span class="marquee-item">Laravel <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">PHP <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Python <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">REST API <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">MySQL <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Docker <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Node.js <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Git <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">JavaScript <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Google Workspace <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">IAM <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">ITIL <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Laravel <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">PHP <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Python <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">REST API <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">MySQL <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Docker <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Node.js <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Git <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">JavaScript <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">Google Workspace <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">IAM <i class="bi bi-circle-fill"></i></span>
+        <span class="marquee-item">ITIL <i class="bi bi-circle-fill"></i></span>
+      </div>
+    </div>
+
+    <!-- ── SOBRE ── -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title animate">Sobre</h2>
+            <div class="sobre-content animate">
+                <p>
+                    Sou Samuel Louvera, desenvolvedor web com foco em back-end e automação.
+                    Trabalho com <strong>Laravel, PHP e Python</strong> para construir APIs REST e soluções
+                    integradas, e com <strong>HTML, CSS e JavaScript</strong> no front-end para interfaces
+                    funcionais e responsivas.
+                </p>
+                <p>
+                    Meu background une desenvolvimento e infraestrutura, o que me permite entender
+                    o sistema de ponta a ponta, não só o código. Utilizo ferramentas de IA
+                    (Claude, ChatGPT, Gemini) no dia a dia como parte do fluxo de trabalho, e tenho
+                    inglês técnico para leitura e interpretação de documentação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FORMAÇÃO ── -->
+    <section id="formacao">
+        <div class="container">
+            <h2 class="section-title animate">Formação</h2>
+            <div class="formacao-grid animate">
+                <div>
+                    <h3 class="formacao-label">Educação</h3>
+                    <div class="formacao-item">
+                        <div class="formacao-icon"><i class="bi bi-mortarboard"></i></div>
+                        <div>
+                            <strong>Análise e Desenvolvimento de Sistemas</strong>
+                            <span>Faculdade Descomplica</span>
+                            <span class="formacao-date">2024 – 2026</span>
+                        </div>
+                    </div>
+                    <div class="formacao-item">
+                        <div class="formacao-icon"><i class="bi bi-tools"></i></div>
+                        <div>
+                            <strong>Técnico em Tecnologia da Informação</strong>
+                            <span>SENAI BH CECOTEG</span>
+                            <span class="formacao-date">2023 – 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="formacao-label">Certificações</h3>
+                    <ul class="cert-list">
+                        <li><i class="bi bi-patch-check"></i> Cisco: Network Defense</li>
+                        <li><i class="bi bi-patch-check"></i> Cisco: Endpoint Security</li>
+                        <li><i class="bi bi-patch-check"></i> Object-Oriented Developer</li>
+                        <li><i class="bi bi-patch-check"></i> Ferramentas de Inteligência Artificial</li>
+                        <li><i class="bi bi-patch-check"></i> Inglês Técnico: leitura e interpretação</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIÊNCIA ── -->
+    <section id="experiencia">
+        <div class="container">
+            <h2 class="section-title animate">Experiência</h2>
+            <div class="timeline">
+
+                <div class="timeline-item animate">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Lápis Raro</h3>
+                                <span class="timeline-role">Estagiário de T.I</span>
+                            </div>
+                            <span class="timeline-date">abr/2026 – atual</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Desenvolvimento e implementação de <strong>middleware Python</strong> para automação de extração e integração de dados via protocolo Intelbras <em>(em produção)</em>.</li>
+                            <li>Desenvolvimento de funcionalidades em um dashboard interno de acompanhamento financeiro (<strong>Next.js, React, TypeScript, Supabase/PostgreSQL</strong>), incluindo modelagem de dados e otimização de consultas <em>(em desenvolvimento)</em>.</li>
+                            <li>Implementação e manutenção de um portal interno de gestão de documentos (<strong>Laravel</strong>), com integração de e-mail automatizada e cobertura de testes automatizados <em>(em produção)</em>.</li>
+                            <li>Administração de <strong>IAM</strong> via Google Workspace, cobrindo 95% do parque de permissões com Princípio do Menor Privilégio.</li>
+                            <li>Gestão do ciclo de vida do colaborador: <strong>onboarding/offboarding</strong> em ambiente híbrido (nuvem e servidor local).</li>
+                            <li>Migração de dados legados (CDs/HDs) para <strong>Google Drive</strong> com rotinas de backup e controle de integridade.</li>
+                            <li>Suporte técnico <strong>N1/N2</strong> via <strong>GLPI</strong> com metodologia <strong>ITIL</strong>: hardware, firmware/drivers e refresh tecnológico.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Google Workspace</span>
+                            <span class="tag">IAM</span>
+                            <span class="tag">GLPI</span>
+                            <span class="tag">ITIL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>AprendaNet &amp; Professor Global</h3>
+                                <span class="timeline-role">Bolsista em Conteúdo Educacional · Projeto CNPq · remoto</span>
+                            </div>
+                            <span class="timeline-date">ago/2025 – atual</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Desenvolvimento de páginas <strong>HTML</strong> para conteúdos educacionais digitais.</li>
+                            <li>Produção e formatação de materiais técnicos e científicos em <strong>LaTeX</strong>.</li>
+                            <li>Tradução e conversão de conteúdos matemáticos de <strong>Maple</strong> para LaTeX e HTML.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">LaTeX</span>
+                            <span class="tag">LMS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item animate">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Polimac Equipamentos para Gastronomia</h3>
+                                <span class="timeline-role">Estagiário de Vendas</span>
+                            </div>
+                            <span class="timeline-date">out/2024 – jan/2025</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Gestão de e-commerce nas plataformas <strong>Nuvem Shop</strong> e <strong>Mercado Livre</strong>.</li>
+                            <li>Atendimento ao cliente com <strong>CRM HubSpot</strong> e <strong>ERP Bling</strong>.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">HubSpot</span>
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Canva</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── TECNOLOGIAS ── -->
+    <section id="tecnologias">
+        <div class="container">
+            <h2 class="section-title animate">Tecnologias</h2>
+            <div class="tech-grid animate">
+                <div class="tech-category">
+                    <h3>Front-End</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                        <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                        <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        <div class="tech-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                        <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+                        <div class="tech-item"><i class="devicon-nextjs-original colored"></i><span>Next.js</span></div>
+                        <div class="tech-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                        <div class="tech-item"><i class="devicon-jquery-plain colored"></i><span>jQuery</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Back-End</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+                        <div class="tech-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                        <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                        <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                        <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        <div class="tech-item"><i class="bi bi-database tech-google-icon"></i><span>Supabase</span></div>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3>Utilitários</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                        <div class="tech-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
+                        <div class="tech-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                        <div class="tech-item"><i class="bi bi-google tech-google-icon"></i><span>G. Workspace</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJETOS ── -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="section-title animate">Projetos</h2>
+            <div class="projects-grid">
+
+                <div class="project-card animate">
+                    <div class="project-accent"></div>
+                    <div class="project-body">
+                        <h3>CoupleSplit API</h3>
+                        <p>API REST em Laravel para gestão financeira de casais. Autenticação, controle de despesas compartilhadas, gestão de benefícios (vale alimentação e refeição) e cálculo de saldo mensal por parceiro.</p>
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">REST API</span>
+                        </div>
+                        <a href="https://github.com/samuzaum/CoupleSplit-API" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-accent"></div>
+                    <div class="project-body">
+                        <h3>Stock 360</h3>
+                        <p>Sistema de controle de estoque desenvolvido como TCC do curso técnico. Otimização de armazenamento e rastreabilidade de produtos em almoxarifado com superlotação. Atuei como Scrum Master.</p>
+                        <div class="project-tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Ajax</span>
+                        </div>
+                        <a href="https://github.com/samuzaum/Stock360" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="bi bi-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card animate">
+                    <div class="project-accent"></div>
+                    <div class="project-body">
+                        <h3>Madzys</h3>
+                        <p>Plataforma de e-commerce para brechó virtual em desenvolvimento. Funcionalidades em construção: catálogo de produtos, carrinho, autenticação e painel de gestão para o vendedor.</p>
+                        <div class="project-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Em desenvolvimento</span>
+                        </div>
+                        <a href="https://www.instagram.com/madz.ys/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="bi bi-instagram"></i> Ver no Instagram
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTATO ── -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title animate">Contato</h2>
+            <p class="contato-desc animate">Disponível para oportunidades remotas em desenvolvimento, automação e suporte técnico.</p>
+            <div class="contato-actions animate">
+                <button class="btn btn-primary" id="email-btn-2">
+                    <i class="bi bi-envelope"></i>
+                    <span id="email-label-2">samuelouvera@gmail.com</span>
+                </button>
+                <a href="https://www.linkedin.com/in/samuel-louvera/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
