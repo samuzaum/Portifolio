@@ -210,22 +210,20 @@ section { padding: 8.5rem 0 5rem; position: relative; }
   transition: transform .2s ease;
 }
 .nav-brand:hover img { transform: rotate(-6deg) scale(1.1); }
+.nav-brand.menu-open img { transform: rotate(90deg); }
+.nav-right { display: flex; align-items: center; gap: 1.4rem; }
 .nav-links { display: flex; gap: 1.9rem; }
+.theme-toggle { width: 30px; height: 30px; font-size: 1rem; }
 .nav-link {
   font-size: .88rem; font-weight: 500; color: var(--slate);
   transition: color .2s ease;
 }
 .nav-link:hover, .nav-link.active { color: var(--accent); }
-.nav-toggle {
-  display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .4rem;
-}
-.nav-toggle span { width: 20px; height: 1.5px; background: var(--ink); transition: transform .2s ease, opacity .2s ease; }
-.nav-toggle.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 @media (max-width: 860px) {
-  .nav-toggle { display: flex; }
+  .nav-container { padding: 0 1.25rem; }
+  .nav-right { gap: .9rem; }
+  .theme-toggle { width: 26px; height: 26px; }
   .nav-links {
     position: fixed; top: 64px; left: 0; right: 0;
     flex-direction: column; gap: 0;
@@ -413,7 +411,7 @@ html[data-theme="light"] .hero-tag { filter: none; }
 }
 .icon-link:hover { color: var(--accent); transform: translateY(-2px); }
 .theme-toggle-star {
-  width: 1.4rem; height: 1.4rem; fill: currentColor;
+  width: 1.15rem; height: 1.15rem; fill: currentColor;
   transition: fill .2s ease, transform .5s ease;
 }
 html[data-theme="light"] .theme-toggle-star {
@@ -779,8 +777,7 @@ html[data-theme="light"] .theme-toggle-star {
 #contato .btn-primary { background: var(--contato-ink); border-color: var(--contato-ink); color: #5c1826; }
 #contato .btn-primary:hover { background: #fff; border-color: #fff; }
 #contato .btn-outline { border-color: rgba(255,255,255,.4); color: var(--contato-ink); }
-#contato .icon-link { color: var(--contato-ink); }
-#contato .btn-outline:hover { border-color: var(--ink); }
+#contato .btn-outline:hover { border-color: var(--contato-ink); }
 
 /* ── Footer ────────────────────────────────────────────────── */
 footer {

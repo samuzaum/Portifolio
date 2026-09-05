@@ -34,19 +34,22 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-const navToggle = document.getElementById('nav-toggle');
+const navBrand = document.getElementById('nav-brand');
 const navLinks = document.getElementById('nav-links');
+const isMobileNav = () => window.matchMedia('(max-width: 860px)').matches;
 
 function closeMenu() {
-  navToggle.classList.remove('open');
+  navBrand.classList.remove('menu-open');
   navLinks.classList.remove('open');
-  navToggle.setAttribute('aria-expanded', 'false');
+  navBrand.setAttribute('aria-expanded', 'false');
 }
 
-navToggle.addEventListener('click', () => {
+navBrand.addEventListener('click', (e) => {
+  if (!isMobileNav()) return;
+  e.preventDefault();
   const isOpen = navLinks.classList.toggle('open');
-  navToggle.classList.toggle('open', isOpen);
-  navToggle.setAttribute('aria-expanded', String(isOpen));
+  navBrand.classList.toggle('menu-open', isOpen);
+  navBrand.setAttribute('aria-expanded', String(isOpen));
 });
 
 navLinks.querySelectorAll('.nav-link').forEach((link) => {
