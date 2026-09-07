@@ -1,9 +1,9 @@
 // Edite este arquivo para marcar o progresso.
-// Depois de editar: git add, git commit, git push. O Vercel atualiza sozinho.
+// Depois de editar: git add, git commit, git push. O GitHub Pages atualiza sozinho em ~1 minuto.
 
 const PROJECT = {
   nome: "Professor Global",
-  subtitulo: "Painel de acompanhamento do desenvolvimento",
+  subtitulo: "Redesign visual, pagamento seguro e catálogo dinâmico ao longo de 5 meses.",
   atualizadoEm: "2026-09-07", // formato AAAA-MM-DD, mude toda vez que atualizar
 };
 
