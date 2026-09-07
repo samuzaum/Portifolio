@@ -13,7 +13,11 @@ const CHECKLIST = [
     itens: [
       { texto: "Levantamento técnico detalhado e organização do plano de arquitetura", feito: false },
       { texto: "Início da identidade visual profissional (design system, páginas principais)", feito: false },
-      { texto: "Planejamento técnico da integração de pagamento seguro", feito: false },
+      {
+        texto: "Planejamento técnico da integração de pagamento seguro",
+        feito: false,
+        nota: "Etapa de projeto, não só configuração: define como o pagamento vai ser validado com segurança nos meses seguintes.",
+      },
     ],
   },
   {
@@ -21,14 +25,26 @@ const CHECKLIST = [
     itens: [
       { texto: "Finalização do redesign visual nas páginas principais", feito: false },
       { texto: "Integração do gateway de pagamento real", feito: false },
-      { texto: "Início da validação de assinatura do webhook de pagamento", feito: false },
+      {
+        texto: "Início da validação de assinatura do webhook de pagamento",
+        feito: false,
+        nota: "Item crítico de segurança: sem essa validação, confirmações de pagamento podem ser forjadas.",
+      },
     ],
   },
   {
     mes: "Mês 3",
     itens: [
-      { texto: "Segurança do pagamento validada e testada ponta a ponta", feito: false },
-      { texto: "Catálogo de cursos migrado do arquivo estático para o banco de dados", feito: false },
+      {
+        texto: "Segurança do pagamento validada e testada ponta a ponta",
+        feito: false,
+        nota: "Fecha o ponto de maior risco do projeto: fraude na confirmação de pagamento.",
+      },
+      {
+        texto: "Catálogo de cursos migrado do arquivo estático para o banco de dados",
+        feito: false,
+        nota: "Envolve dados já migrados do Moodle; exige validação cuidadosa para não perder ou duplicar conteúdo.",
+      },
       { texto: "Tutor de IA ativado e testado", feito: false },
     ],
   },

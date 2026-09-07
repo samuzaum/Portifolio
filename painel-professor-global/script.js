@@ -89,8 +89,19 @@ function render() {
       texto.className = "item-texto" + (it.feito ? " feito" : "");
       texto.textContent = it.texto;
 
-      li.appendChild(check);
-      li.appendChild(texto);
+      const linha = document.createElement("div");
+      linha.className = "item-linha";
+      linha.appendChild(check);
+      linha.appendChild(texto);
+      li.appendChild(linha);
+
+      if (it.nota) {
+        const nota = document.createElement("p");
+        nota.className = "item-nota";
+        nota.textContent = it.nota;
+        li.appendChild(nota);
+      }
+
       lista.appendChild(li);
     });
 
