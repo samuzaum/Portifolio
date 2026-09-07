@@ -1,0 +1,35 @@
+Esta é uma edição de foto real, não uma ilustração nova. Trate o rosto, a pele, o cabelo e as feições desta pessoa como INTOCÁVEIS: copie-os pixel a pixel da foto original, sem redesenhar, suavizar, embelezar ou reinterpretar. Não mude o formato do rosto, o formato do nariz, o formato e a proporção dos olhos, as sobrancelhas, a boca, o queixo, a linha do maxilar, o tom de pele, os brincos, os piercings e o cabelo (mesmo volume e formato do cacheado). Mantenha a expressão séria e a pose frontal exatamente como na foto original. Se não tiver certeza sobre algum detalhe do rosto, priorize copiar exatamente o que está na imagem de referência em vez de inventar.
+
+A única coisa que deve mudar é o AMBIENTE ao redor da pessoa (fundo, iluminação da cena e roupa) — como se fosse feito no Photoshop recortando a pessoa e trocando o cenário, não uma geração nova do zero.
+
+FUNDO
+
+Substituir completamente o ambiente atual por um fundo de estúdio liso em vermelho vivo e saturado, tom carmesim/framboesa (não bordô escuro nem marrom acastanhado), próximo ao código de cor #C9455C. O fundo deve ter uma pequena variação de luminosidade atrás da cabeça, criando um halo suave e natural, com as bordas ligeiramente mais escuras. Não deixar aparência de parede comum ou fundo artificial recortado.
+
+ILUMINAÇÃO
+
+Reiluminar a cena como se tivesse sido capturada em um estúdio fotográfico profissional, mas aplicando a luz sobre a pessoa como ela já é na foto — sem alterar geometria facial:
+
+Key light: softbox grande a aproximadamente 45° da câmera, ligeiramente acima da altura dos olhos, iluminando suavemente o rosto.
+
+Fill light: luz frontal mais fraca para suavizar sombras sem achatar o rosto.
+
+Rim/hair light: luz suave atrás e lateralmente, destacando o contorno do cabelo e dos ombros contra o fundo.
+
+Iluminação do fundo independente, criando o degradê/halo vermelho atrás da cabeça.
+
+Sombras faciais suaves e realistas, highlights naturais na pele, catchlights nos olhos, boa separação entre pessoa e fundo. Evitar aparência de iluminação de celular, ring light, luz de teto ou HDR excessivo.
+
+Não adicionar, inventar ou destacar acne, espinhas ou manchas que não sejam claramente visíveis na foto original — não exagerar imperfeições de pele. Se quiser uma pele com aparência mais lisa e uniforme, conseguir isso através da própria luz (softbox maior e mais próxima do rosto, ou um fill light mais forte e frontal, como um beauty dish), do jeito que um fotógrafo de estúdio de verdade suavizaria a pele com iluminação difusa — nunca por retoque digital, blur ou suavização de pele por software. O resultado deve continuar parecendo pele de verdade, com poros e textura, só que sob uma luz mais lisonjeira.
+
+ROUPA
+
+Visual streetwear, não formal: nada de blazer ou gravata. Pode ser jaqueta streetwear (bomber, jeans ou couro) ou camiseta/camisa casual, com boa textura de tecido, sem virar traje social. Manter a corrente/colar e os brincos visíveis. Pode manter a cor da peça original ou trocar por uma peça preta/branca lisa que contraste com o fundo vermelho.
+
+ENQUADRAMENTO
+
+Vertical, cabeça, ombros e parte superior do torso, pessoa olhando pra câmera. Câmera full-frame, lente de retrato (85mm), foco nítido nos olhos, com uma leve profundidade de campo (fundo levemente mais suave que o rosto).
+
+Evitar totalmente a aparência de foto de documento/3x4 (RG, passaporte): nada de simetria perfeitamente rígida, nada de luz totalmente frontal e chapada, nada de fundo uniforme sem nenhum degradê. Deve parecer um retrato editorial/portfolio, não uma foto de cadastro — pequena variação natural no ângulo da cabeça (não precisa estar 100% de frente, um leve giro de 5-10° é bem-vindo), profundidade e dimensão reais na luz.
+
+IMPORTANTE: o resultado deve parecer a MESMA pessoa da foto original, apenas fotografada em outro cenário e com outra luz — não uma pessoa parecida, não um rosto "melhorado", a mesma pessoa exata.

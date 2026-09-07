@@ -8,6 +8,26 @@ if (nameStar) {
   });
 }
 
+/* ── Estrela atrás do nome: gira sem parar enquanto o mouse estiver em cima, e termina o giro atual antes de parar ── */
+const nameStarWrap = document.querySelector('.hero-name-wrap');
+const spinStar = document.querySelector('.name-star');
+if (nameStarWrap && spinStar) {
+  let wantsToStop = false;
+
+  nameStarWrap.addEventListener('mouseenter', () => {
+    wantsToStop = false;
+    spinStar.classList.add('spinning');
+  });
+  nameStarWrap.addEventListener('mouseleave', () => {
+    wantsToStop = true;
+  });
+  spinStar.addEventListener('animationiteration', (e) => {
+    if (e.animationName === 'star-spin' && wantsToStop) {
+      spinStar.classList.remove('spinning');
+    }
+  });
+}
+
 /* ── Alternância de tema claro/escuro ── */
 const themeToggle = document.getElementById('theme-toggle');
 if (themeToggle) {
@@ -320,19 +340,39 @@ document.querySelectorAll('.deco-star--outline:not(.star-sobre):not(.star-experi
 document.querySelectorAll('.hero-blob .star-b, .star-sobre use, .star-experiencia use')
   .forEach((el) => randomizeFlicker(el, 'glitch-flicker-svg-invert'));
 
-/* ── Cursor customizado: estrela vazia que cresce enquanto o mouse se move ── */
-const cursorStar = document.getElementById('cursor-star');
-if (cursorStar && window.matchMedia('(hover: hover)').matches) {
+/* ── Cursor customizado: anel que segue o mouse com leve atraso ── */
+const cursorRing = document.getElementById('cursor-ring');
+if (cursorRing && window.matchMedia('(hover: hover)').matches) {
   document.documentElement.classList.add('custom-cursor-active');
-  let moveStopTimer;
+
+  let mouseX = -999, mouseY = -999;
+  let ringX = -999, ringY = -999;
+  let started = false;
 
   document.addEventListener('mousemove', (e) => {
-    cursorStar.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
-    cursorStar.classList.add('active', 'is-moving');
-    clearTimeout(moveStopTimer);
-    moveStopTimer = setTimeout(() => cursorStar.classList.remove('is-moving'), 150);
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursorRing.classList.add('active');
+    if (!started) {
+      started = true;
+      ringX = mouseX;
+      ringY = mouseY;
+    }
   });
 
-  document.addEventListener('mouseleave', () => cursorStar.classList.remove('active'));
-  document.addEventListener('mouseenter', () => cursorStar.classList.add('active'));
+  document.addEventListener('mouseleave', () => cursorRing.classList.remove('active'));
+  document.addEventListener('mouseenter', () => cursorRing.classList.add('active'));
+
+  const hoverTargets = 'a, button, .btn, .icon-link, input, textarea, [role="button"]';
+  document.addEventListener('mouseover', (e) => {
+    cursorRing.classList.toggle('is-hovering', !!e.target.closest(hoverTargets));
+  });
+
+  function tickCursor() {
+    ringX += (mouseX - ringX) * 0.2;
+    ringY += (mouseY - ringY) * 0.2;
+    cursorRing.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(tickCursor);
+  }
+  requestAnimationFrame(tickCursor);
 }
