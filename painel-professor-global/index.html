@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor Global · Painel de Desenvolvimento</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2336255c'/%3E%3Ctext x='50' y='58' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EPG%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand-row">
+        <span class="brand-mark">PG</span>
+        <span class="brand-name">Professor Global</span>
+      </div>
+      <p class="eyebrow">01 &middot; Acompanhamento de desenvolvimento</p>
+      <h1 id="titulo">Professor Global</h1>
+      <p class="subtitulo" id="subtitulo"></p>
+    </header>
+
+    <div class="progress-card">
+      <div class="progress-top">
+        <span class="progress-pct" id="progressoPct">0%</span>
+        <span class="progress-label" id="progressoLabel"></span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressoFill" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <p class="eyebrow eyebrow-section">02 &middot; Cronograma por mês</p>
+
+    <div class="timeline" id="meses"></div>
+
+    <footer class="rodape">
+      <span>Professor Global</span>
+      <span>Última atualização em <span id="atualizadoEm"></span></span>
+    </footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
